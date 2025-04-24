@@ -1,0 +1,33 @@
+:root {
+    --font-family-base: 'Pretendard', sans-serif;
+    --font-size-caption: 1.2rem;
+    --font-size-label: 1.3rem;
+    --fotn-size-label2: 1.4rem;
+    --font-size-normal: 1.5rem;
+    --font-size-base: 1.6rem;
+    --font-size-title2: 2.8rem;
+    --line-height-caption: 1.33;
+    --line-height-title2: 1.36;
+    --line-height-label: 1.38;
+    --line-height-label2: 1.43;
+    --line-height-normal: 1.47;
+    --line-height-base: 1.5;
+    --spacing-base: -1%;
+    --spacing-title2: -2.36%;
+    --color-text: #17191A;
+    --color-text-muted: rgba(55, 56, 60, 0.61);
+    --color-text-disabled: rgba(55, 56, 60, 0.28);
+    --color-white: #ffffff;
+    --color-disabled: #F4F4F5;
+    --color-primary-normal: #0066FF;
+    --color-line-neutral: #EAEBEC;
+    --color-line-normal: rgba(112, 115, 124, 0.22);
+    --color-line-alternative: rgba(112, 115, 124, 0.08);
+    --color-status-negative: #FF4242;
+    --border-base: 1px solid rgba(112, 115, 124, 0.16);
+    --border-normal: 1px solid rgba(112, 115, 124, 0.22);
+    --border-radius-xs: 0.6rem;
+    --border-radius-sm: 0.8rem;
+    --border-radius-md: 1rem;
+    --border-radius-lg: 1.6rem;
+}
