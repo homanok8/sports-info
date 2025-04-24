@@ -59,13 +59,23 @@ button:disabled {
     padding: 1rem 0.8rem;
     font-size: var(--fotn-size-label2);
     line-height: var(--line-height-label2);
+    background-color: var(--color-white);
     color: var(--color-text);
     font-weight: 400;
     transition: all 0.3s;
 }
 
+.input-base:disabled {
+    background-color: var(--color-line-alternative);
+    color: var(--color-line-alternative);
+}
+
 .input-base::placeholder {
     color: var(--color-text-muted);
+}
+
+.input-base:disabled::placeholder {
+    color: var(--color-text-neutral);
 }
 
 .input-base:focus {
@@ -86,6 +96,10 @@ button:disabled {
     top: 50%;
     right: 0.8rem;
     transform: translateY(-50%);
+}
+
+.input-base:disabled + .input-icon {
+    pointer-events: none;
 }
 
 .input-icon img {
