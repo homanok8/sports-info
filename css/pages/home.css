@@ -183,6 +183,8 @@
 }
 
 .popup__block {
+    width: 100%;
+    max-width: 36rem;
     position: absolute;
     top: 50%;
     left: 50%;

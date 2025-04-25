@@ -50,7 +50,7 @@ $(function() {
         }
     });
 
-    // 로그인 팝업 확인 버튼
+    // 로그인 팝업, 비밀번호 변경 확인 버튼
     $('#loginPopCheck').click(function() {
         $(this).parents('.popup').removeClass('on');
     });
