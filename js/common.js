@@ -41,6 +41,15 @@ $(function() {
         }
     });
 
+    // 비밀번호 변경 저장 버튼 활성화
+    $('#userPw, #userPwChk').keyup(function() {
+        if ($('#userPw').val() && $('#userPwChk').val()) {
+            $('#pwSaveBtn').attr('disabled', false);
+        } else {
+            $('#pwSaveBtn').attr('disabled', true);
+        }
+    });
+
     // 로그인 팝업 확인 버튼
     $('#loginPopCheck').click(function() {
         $(this).parents('.popup').removeClass('on');

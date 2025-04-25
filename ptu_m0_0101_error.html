@@ -95,6 +95,18 @@
                                     <div class="input-box">
                                         <input type="text" id="userId" class="input-base" title="아이디를 입력해주세요." placeholder="user@email.com">
                                     </div>
+                                    <!-- 에러 상태 시 추가 -->
+                                    <p class="input-error-text">헬퍼 텍스트 영역</p>
+                                    <!-- // 에러 상태 시 추가 -->
+                                    <!-- 에러 상태 시 포커스 (개발작업 시 삭제) -->
+                                    <script>
+                                        $(function() {
+                                            $('#userId').val('user@email.com');
+                                            $('#userId').addClass('error');
+                                            $('#userId').focus();
+                                        });
+                                    </script>
+                                    <!-- // 에러 상태 시 포커스 (개발작업 시 삭제) -->
                                 </div>
                                 <div class="input-item">
                                     <div class="input-box">
