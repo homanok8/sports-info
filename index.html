@@ -1,148 +1,85 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그인</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/common.js"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+
+	<title> :: LIST</title>
+	<style>
+		/* layout */
+		#wrap{position:relative;height:100%;box-sizing:border-box}
+		#header{position:fixed;top:0;left:0;right:0;height:70px;background:#3789db;z-index:30}
+		#header h1{padding-left:20px;font-size:20px;color:#fff;line-height:70px}
+		
+		/* lnb */
+		#lnb{position:fixed;top:70px;bottom:0;left:0;width:200px;border-right:1px solid #ccc}
+		#lnb li.on a{background:#f0f7fe;color:#3789db}
+		#lnb a{display:block;padding:0 20px;border-bottom:1px solid #ccc;color:#333;font-size:14px;font-weight:bold;line-height:40px}
+		#lnb a:hover{background:#eee}
+
+		/* Container */
+		#container{width:100%;height:100%;padding:70px 0 0 0;box-sizing:border-box}
+		.section{display:none}
+		.section.on{display:block}
+
+		/* Table */
+		.table-box table{width:100%;table-layout:fixed}
+		.table-box table th{border:1px solid #ddd;color:#333;font-size:14px;line-height:40px;}
+		.table-box table td{padding:0 10px;line-height:40px;border:1px solid #ddd;}
+        .table-box table td.center {text-align: center; vertical-align: middle;}
+		.table-box table td a{color:#3789db}
+
+		/* State */
+		.progress{color:#eb0164}
+		.complate{color:#3789db}
+	</style>
 </head>
 <body>
-    <div id="wrap">
-        <!-- header -->
-        <header id="header" class="header">
-            <div class="inner">
-                <h1 class="logo">
-                    <a href="#">
-                        <img src="images/logo.png" alt="체육정보 종합포털">
-                    </a>
-                </h1>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">스포츠 원클릭</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">스포츠 허브</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">아카이브</a>
-                        </li>
-                    </ul>
-                    <button type="button" class="menu-btn">
-                        <span class="blind">전체메뉴 펼치기</span>
-                        <div class="menu-btn__icon">
-                            <i></i>
-                            <i></i>
-                            <i></i>
-                        </div>
-                    </button>
-                    <ul class="goto__list">
-                        <li class="goto__item">
-                            <a href="#" class="goto__link">로그인</a>
-                        </li>
-                        <li class="goto__item">
-                            <a href="#" class="goto__link">회원가입</a>
-                        </li>
-                        <li class="goto__item">
-                            <a href="#" class="goto__link goto__link--blk">이용안내</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <!-- // header -->
-
-        <!-- breadcrumbs -->
-        <div class="brdc">
-            <div class="inner">
-                <ul class="brdc__list">
-                    <li class="brdc__item">
-                        <a href="#" class="brdc__home">메인</a>
-                    </li>
-                    <li class="brdc__item focus">
-                        <a href="#" class="brdc__link">로그인</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- // breadcrumbs -->
-
-        <!-- footer -->
-        <footer id="footer" class="footer">
-            <div class="inner">
-                <div class="footer__top">
-                    <h3 class="footer__logo">
-                        <a href="#">
-                            <img src="images/logo.png" alt="">
-                        </a>
-                    </h3>
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">개인정보 처리방침</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">이용약관</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">저작권 정책</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">체육정보 종합포털 소개</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__md">
-                    <address class="footer__adr">
-                        <span>체육정보 종합포털</span>
-                        <span>대표이사 이주현</span>
-                    </address>
-                    <address class="footer__adr">
-                        <span>[05540] 서울특별시 송파구 올림픽로 424 올림픽회관</span>
-                        <span>대표전화: 02-2144-8114</span>
-                    </address>
-                </div>
-                <div class="footer__bm">
-                    <p class="footer__copy">© Copyright©2016 Korean Sport & Olympic Committee. All rights reserved.</p>
-                    <div class="sns">
-                        <ul class="sns__list">
-                            <li class="sns__item">
-                                <a href="#" class="sns__link">
-                                    <img src="images/icons/instagram-icon.png" alt="인스타그램">
-                                </a>
-                            </li>
-                            <li class="sns__item">
-                                <a href="#" class="sns__link">
-                                    <img src="images/icons/youtube-icon.png" alt="유튜브">
-                                </a>
-                            </li>
-                            <li class="sns__item">
-                                <a href="#" class="sns__link">
-                                    <img src="images/icons/facebook-icon.png" alt="페이스북">
-                                </a>
-                            </li>
-                            <li class="sns__item">
-                                <a href="#" class="sns__link">
-                                    <img src="images/icons/blog-icon.png" alt="네이버블로그">
-                                </a>
-                            </li>
-                            <li class="sns__item">
-                                <a href="#" class="sns__link">
-                                    <img src="images/icons/apple-icon.png" alt="앱스토어">
-                                </a>
-                            </li>
-                            <li class="sns__item">
-                                <a href="#" class="sns__link">
-                                    <img src="images/icons/play-icon.png" alt="구글플레이">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- // footer -->
-    </div>
+	<div id="wrap">
+		<div id="header">
+			<h1>체육정보 종합포털 퍼블리싱 진행사항</h1>
+		</div>
+		<div id="container">
+			<div id="contents">
+				<div class="section on">
+					<div class="table-box">
+						<table>
+							<colgroup>
+								<col style="width:10%">
+								<col style="width:20%">
+								<col>
+                                <col style="width:10%">
+							</colgroup>
+							<thead>
+                                <th>ID</th>
+								<th>화면경로</th>
+								<th>URL</th>
+								<th>비고</th>
+							</thead>
+							<tbody>
+                                <tr>
+                                    <td rowspan="3" class="center">ptu_m0_0101</td>
+                                    <td>메인 &gt; <strong>로그인</strong></td>
+                                    <td><a href="https://homanok8.github.io/sports-info/ptu_m0_0101.html" title="새창열림" target="_blank">https://homanok8.github.io/sports-info/ptu_m0_0101.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+                                <tr>
+                                    <td>메인 &gt; <strong>로그인(비활성화)</strong></td>
+                                    <td><a href="https://homanok8.github.io/sports-info/ptu_m0_0101_disabled.html" title="새창열림" target="_blank">https://homanok8.github.io/sports-info/ptu_m0_0101_disabled.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+                                <tr>
+                                    <td>메인 &gt; <strong>로그인(팝업)</strong></td>
+                                    <td><a href="https://homanok8.github.io/sports-info/ptu_m0_0101_pop.html" title="새창열림" target="_blank">https://homanok8.github.io/sports-info/ptu_m0_0101_pop.html</a></td>
+                                    <td class="complate">완료</td>
+                                </tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
