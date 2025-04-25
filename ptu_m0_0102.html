@@ -61,8 +61,11 @@
                     <li class="brdc__item">
                         <a href="#" class="brdc__home">메인</a>
                     </li>
-                    <li class="brdc__item focus">
+                    <li class="brdc__item">
                         <a href="ptu_m0_0101.html" class="brdc__link">로그인</a>
+                    </li>
+                    <li class="brdc__item focus">
+                        <a href="ptu_m0_0102.html" class="brdc__link">아이디 찾기</a>
                     </li>
                 </ul>
             </div>
@@ -70,76 +73,37 @@
         <!-- // breadcrumbs -->
 
         <!-- contents -->
-        <section class="login">
+        <section class="find">
             <div class="inner">
-                <h2 class="login__tit">로그인</h2>
+                <h2 class="login__tit">아이디 찾기</h2>
                 <p class="login__desc">
-                    체육정보 종합포털을 방문해주셔서 감사합니다.<br>
-                    로그인하시면 다양한 <span>맞춤형 서비스</span>를 이용하실 수 있습니다.
+                    아이디를 찾기 위해서는 <span>본인인증 절차</span>가 필요합니다.<br>
+                    자주 사용하시는 인증 수단으로 본인인증을 진행해주세요.
                 </p>
-                <div class="login__detail">
-                    <button type="button" id="loginDetailToggle">
-                        <span>자세히</span>
-                    </button>
-                    <p class="login__desc">
-                        대한체육회 홈페이지의 아이디와 비밀번호를 그대로 사용하실 수 있습니다.<br>
-                        없으신 분은 회원가입 후 로그인해주세요.
-                    </p>
-                </div>
-                <div class="login__form">
-                    <form method="" action="" id="" name="">
-                        <fieldset>
-                            <legend>로그인 폼</legend>
-                            <div class="login__block">
-                                <div class="input-item">
-                                    <div class="input-box">
-                                        <input type="text" id="userId" class="input-base" title="아이디를 입력해주세요." placeholder="user@email.com">
-                                    </div>
-                                    <!-- 에러 상태 시 추가 -->
-                                    <p class="input-error-text">헬퍼 텍스트 영역</p>
-                                    <!-- // 에러 상태 시 추가 -->
-                                    <!-- 에러 상태 시 포커스 (개발작업 시 삭제) -->
-                                    <script>
-                                        $(function() {
-                                            $('#userId').val('user@email.com');
-                                            $('#userId').addClass('error');
-                                            $('#userId').focus();
-                                        });
-                                    </script>
-                                    <!-- // 에러 상태 시 포커스 (개발작업 시 삭제) -->
-                                </div>
-                                <div class="input-item">
-                                    <div class="input-box">
-                                        <input type="password" id="userPw" class="input-base" title="비밀번호를 입력해주세요." placeholder="비밀번호를 입력해주세요.">
-                                        <button type="button" class="input-icon" id="hidePassword">
-                                            <img src="images/icons/view-icon.png" alt="비밀번호 보기">
-                                        </button>
-                                    </div>
-                                </div>
-                                <button type="submit" class="login__btn" id="loginBtn" disabled>로그인</button>
-                            </div>
-                        </fieldset>
-                    </form>
-                    <div class="esys">
-                        <a href="#" class="esys__link">
-                            <img src="images/icons/kakao-icon.png" alt="카카오 로그인">
-                        </a>
-                        <a href="#" class="esys__link">
-                            <img src="images/icons/google-icon.png" alt="구글 로그인">
-                        </a>
+                <article class="find__grid">
+                    <div class="find__block">
+                        <div class="find__top">
+                            <img src="images/phn-ath.png" class="find__icon" alt="">
+                            <h3 class="find__name">휴대폰 인증 서비스</h3>
+                            <a href="#" class="find__link">휴대폰 인증하기</a>
+                        </div>
+                        <ul class="find__list">
+                            <li>※ 본인명의로 가입된 휴대폰으로 이용하여 인증합니다.</li>
+                            <li>※ 타인명의의 휴대폰 또는 법인폰을 이용중인 회원님은 휴대폰 본인 인증이 불가합니다.</li>
+                        </ul>
                     </div>
-                </div>
-                <ul class="login__list">
-                    <li class="login__item">
-                        <a href="ptu_m0_0102.html">아이디 찾기</a>
-                    </li>
-                    <li class="login__item">
-                        <a href="#">비밀번호 찾기</a>
-                    </li>
-                    <li class="login__item">
-                        <a href="#">회원가입</a>
-                    </li>
-                </ul>
+                    <div class="find__block">
+                        <div class="find__top">
+                            <img src="images/ipin.png" class="find__icon" alt="">
+                            <h3 class="find__name">아이핀(I-PIN) 인증 서비스</h3>
+                            <a href="#" class="find__link">아이핀(I-PIN) 인증하기</a>
+                        </div>
+                        <ul class="find__list">
+                            <li>※ 주민번호 대체 수단인 아이핀을 통해 인증합니다.</li>
+                            <li>※ 아이핀 계정이 없는 경우(또는 14세 미만 어린이의 경우) I-PIN 센터에서 발급받으세요.</li>
+                        </ul>
+                    </div>
+                </article>
             </div>
         </section>
         <!-- // contents -->

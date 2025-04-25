@@ -237,3 +237,66 @@
 .popup__bm {
     margin-top: 2.4rem;
 }
+
+/* 아이디 찾기 */
+.find {
+    padding: 8rem 0;
+}
+
+.find .inner {
+    max-width: 87.2rem;
+}
+
+.find__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+    margin-top: 3.2rem;
+}
+
+.find__block {
+    border: var(--border-base);
+    border-radius: var(--border-radius-lg);
+    padding: 3.2rem 2.4rem;
+}
+
+.find__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.find__icon {
+    display: block;
+    width: 9.6rem;
+    height: 9.6rem;
+    object-fit: contain;
+}
+
+.find__name {
+    margin-top: 1.6rem;
+    font-weight: 600;
+}
+
+.find__link {
+    border: 1px solid var(--color-primary-normal);
+    border-radius: var(--border-radius-sm);
+    font-size: var(--font-size-normal);
+    line-height: var(--line-height-normal);
+    color: var(--color-primary-normal);
+    margin-top: 1.2rem;
+    padding: 0.9rem 2rem;
+}
+
+.find__list li {
+    margin-top: 3.2rem;
+    font-weight: 400;
+    font-size: var(--font-size-label);
+    line-height: var(--line-height-label);
+    color: var(--color-text-muted);
+    word-break: auto-phrase;
+}
+
+.find__list li + li {
+    margin-top: 0.4rem;
+}

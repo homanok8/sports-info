@@ -40,6 +40,10 @@ button:disabled {
 	overflow: hidden;
 }
 
+#wrap {
+    padding-top: 6rem;
+}
+
 .inner {
     width: 100%;
     max-width: 110rem;
