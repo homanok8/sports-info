@@ -18,6 +18,7 @@
     --color-text-muted: rgba(55, 56, 60, 0.61);
     --color-text-disabled: rgba(55, 56, 60, 0.28);
     --color-text-neutral: rgba(55, 56, 60, 0.16);
+    --color-text-pop: rgba(46, 47, 51, 0.88);
     --color-white: #ffffff;
     --color-disabled: #F4F4F5;
     --color-primary-normal: #0066FF;
@@ -25,6 +26,7 @@
     --color-line-normal: rgba(112, 115, 124, 0.22);
     --color-line-alternative: rgba(112, 115, 124, 0.08);
     --color-status-negative: #FF4242;
+    --color-popup-bg: rgba(0, 0, 0, 0.7);
     --border-base: 1px solid rgba(112, 115, 124, 0.16);
     --border-normal: 1px solid rgba(112, 115, 124, 0.22);
     --border-radius-xs: 0.6rem;

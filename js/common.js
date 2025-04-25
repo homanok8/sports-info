@@ -41,5 +41,14 @@ $(function() {
         }
     });
 
+    // 로그인 팝업 확인 버튼
+    $('#loginPopCheck').click(function() {
+        $(this).parents('.popup').removeClass('on');
+    });
+
+    // 팝업 닫기
+    $('.popup__close').click(function() {
+        $(this).parents('.popup').removeClass('on');
+    });
 
 });

@@ -93,20 +93,9 @@
                             <div class="login__block">
                                 <div class="input-item">
                                     <div class="input-box">
-                                        <input type="text" id="userId" class="input-base" title="아이디를 입력해주세요." placeholder="user@email.com">
+                                        <input type="text" id="userId" class="input-base error" title="아이디를 입력해주세요." placeholder="user@email.com">
                                     </div>
-                                    <!-- 에러 상태 시 추가 -->
                                     <p class="input-error-text">헬퍼 텍스트 영역</p>
-                                    <!-- // 에러 상태 시 추가 -->
-                                    <!-- 에러 상태 시 포커스 (개발작업 시 삭제) -->
-                                    <script>
-                                        $(function() {
-                                            $('#userId').val('user@email.com');
-                                            $('#userId').addClass('error');
-                                            $('#userId').focus();
-                                        });
-                                    </script>
-                                    <!-- // 에러 상태 시 포커스 (개발작업 시 삭제) -->
                                 </div>
                                 <div class="input-item">
                                     <div class="input-box">
@@ -219,5 +208,26 @@
         </footer>
         <!-- // footer -->
     </div>
+
+    <!-- popup -->
+    <div class="popup on">
+        <section class="popup__block">
+            <button type="button" class="popup__close">
+                <span class="blind">팝업닫기</span>
+            </button>
+            <h3 class="popup__tit">
+                <img src="images/icons/warning-icon.png" alt="">
+                <span>아이디 또는 비밀번호가 맞지 않습니다.</span>
+            </h3>
+            <p class="popup__desc">
+                확인 후 다시 로그인하시거나 회원이 아니신 분은<br>
+                회원가입 후 이용해주시기 바랍니다.
+            </p>
+            <div class="popup__bm">
+                <button type="button" id="loginPopCheck" class="btn-base">확인</button>
+            </div>
+        </section>
+    </div>
+    <!-- // popup -->
 </body>
 </html>
