@@ -60,5 +60,11 @@ $(function() {
         $(this).parents('.popup').removeClass('on');
     });
 
+    // 메인 체육활동, 교육참여 메뉴 토글
+    $('.main__toggle-btn').click(function() {
+        $(this).toggleClass('open');
+        $(this).next().slideToggle();
+    });
+
 
 });
