@@ -5,14 +5,19 @@
     --fotn-size-label2: 1.4rem;
     --font-size-normal: 1.5rem;
     --font-size-base: 1.6rem;
+    --font-size-headline: 1.8rem;
+    --font-size-heading: 2rem;
     --font-size-title2: 2.8rem;
     --line-height-caption: 1.33;
+    --line-height-heading: 1.34;
     --line-height-title2: 1.36;
     --line-height-label: 1.38;
     --line-height-label2: 1.43;
+    --line-height-headline: 1.45;
     --line-height-normal: 1.47;
     --line-height-base: 1.5;
     --spacing-base: -1%;
+    --spacing-heading: -1.2%;
     --spacing-title2: -2.36%;
     --color-text: #17191A;
     --color-text-muted: rgba(55, 56, 60, 0.61);
@@ -25,6 +30,7 @@
     --color-line-neutral: #EAEBEC;
     --color-line-normal: rgba(112, 115, 124, 0.22);
     --color-line-alternative: rgba(112, 115, 124, 0.08);
+    --color-bg-alternative: #F7F7F8;
     --color-status-negative: #FF4242;
     --color-popup-bg: rgba(0, 0, 0, 0.7);
     --border-base: 1px solid rgba(112, 115, 124, 0.16);
