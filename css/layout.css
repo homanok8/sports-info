@@ -12,7 +12,7 @@ html, body {
     background-color: var(--color-white);
 }
 
-body, input, textarea, button, select, a {
+body, input, textarea, button, select, a, img {
     font-family: var(--font-family-base);
     font-size: var(--font-size-base);
     line-height: var(--line-height-base);
@@ -28,6 +28,10 @@ button, a {
 
 button:disabled {
     cursor: unset;
+}
+
+img {
+    width: 100%;
 }
 
 .blind, caption, legend {
@@ -61,7 +65,7 @@ button:disabled {
     border: var(--border-base);
     border-radius: var(--border-radius-sm);
     padding: 1rem 0.8rem;
-    font-size: var(--fotn-size-label2);
+    font-size: var(--font-size-label2);
     line-height: var(--line-height-label2);
     background-color: var(--color-white);
     color: var(--color-text);
@@ -101,7 +105,7 @@ button:disabled {
     border: 1px solid var(--color-primary-normal);
     border-radius: var(--border-radius-sm);
     padding: 1.2rem 1.6rem;
-    font-size: var(--fotn-size-label2);
+    font-size: var(--font-size-label2);
     line-height: var(--line-height-label2);
     background-color: var(--color-white);
     color: var(--color-text);
@@ -213,17 +217,151 @@ button:disabled {
     position: absolute;
     top: 0;
     right: 0;
-    font-size: var(--fotn-size-label2);
+    font-size: var(--font-size-label2);
     line-height: var(--line-height-label2);
     color: var(--color-text-muted);
 }
 
 .input-label {
     display: block;
-    font-size: var(--fotn-size-label2);
+    font-size: var(--font-size-label2);
     line-height: var(--line-height-label2);
     color: var(--color-text-pop);
     margin-bottom: 0.4rem;
+}
+
+.tab {
+    display: flex;
+    padding: 0.4rem;
+    border-radius: var(--border-radius-sm);
+    background: var(--color-bg-alternative);
+    margin-top: 1.6rem;
+    position: relative;
+}
+
+.tab--mt12 {
+    margin-top: 1.2rem;
+}
+
+.tab--mt0 {
+    margin-top: 0;
+}
+
+.tab--pd8 {
+    padding: 0.8rem;
+}
+
+.tab-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem;
+    border: 0;
+    border-radius: var(--border-radius-xs);
+    background: transparent;
+    font-size: var(--font-size-label2);
+    color: var(--color-text-pop);
+    line-height: var(--line-height-label2);
+    transition: all 0.3s;
+}
+
+.tab-btn.active {
+    background-color: var(--color-white);
+    color: var(--color-primary-normal);
+    box-shadow: 0px 2px 4px 0px #0000001A;
+}
+
+.tab-btn:hover {
+    background-color: var(--color-white);
+    box-shadow: 0px 2px 4px 0px #0000001A;
+}
+
+.tab2 {
+    display: flex;
+    margin-top: 1.2rem;
+}
+
+.tab2__btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    font-weight: 600;
+    border: var(--border-normal);
+    border-right: 0;
+    background-color: var(--color-white);
+}
+
+.tab2__btn:first-child {
+    border-top-left-radius: var(--border-radius-normal);
+    border-bottom-left-radius: var(--border-radius-normal);
+}
+
+.tab2__btn:last-child {
+    border-top-right-radius: var(--border-radius-normal);
+    border-bottom-right-radius: var(--border-radius-normal);
+    border-right: var(--border-normal);
+}
+
+.tab2__btn.active {
+    color: var(--color-primary-normal);
+    background: var(--color-bg-blue99);
+    border-color: var(--color-accent-blue80);
+}
+
+.tab2__btn.active + .tab2__btn {
+    border-left-color: var(--color-accent-blue80);
+}
+
+.tab2__btn--green.active {
+    color: var(--color-accent-green40);
+    background: var(--color-bg-green99);
+    border-color: var(--color-accent-green50);
+}
+
+.tab2__btn--green.active + .tab2__btn--green {
+    border-left-color: var(--color-accent-green50);
+}
+
+.reload {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.6rem;
+    font-size: var(--font-size-label);
+    line-height: var(--line-height-label);
+    padding: 0.7rem;
+    border: var(--border-normal);
+    border-radius: var(--border-radius-xs);
+    background-color: var(--color-white);
+    position: relative;
+}
+
+.reload--pd9 {
+    padding: 0.9rem;
+}
+
+.reload--mt0 {
+    margin-top: 0;
+}
+
+.reload img {
+    display: block;
+    width: 1.6rem;
+    height: 1.6rem;
+    object-fit: contain;
+    margin-right: 0.4rem;
+}
+
+.reload span em {
+    color: var(--color-text-muted);
+}
+
+.reload span b {
+    color: var(--color-primary-normal);
 }
 
 /* header */
@@ -448,7 +586,7 @@ button:disabled {
     justify-content: space-between;
     margin-top: 2.4rem;
     padding-top: 2rem;
-    border-top: 1px solid var(--color-line-alternative);
+    border-top: var(--border-alternative);
 }
 
 .footer__copy {

@@ -133,10 +133,10 @@
                             <h3 class="main__txt">체육 일정 안내</h3>
                             <a class="main__all" href="#">전체 보기</a>
                         </div>
-                        <div class="main__tab">
-                            <button type="button" class="main__tab-btn active">국내 일정</button>
-                            <button type="button" class="main__tab-btn">국제 일정</button>
-                            <button type="button" class="main__tab-btn">기타</button>
+                        <div class="tab">
+                            <button type="button" class="tab-btn active">국내 일정</button>
+                            <button type="button" class="tab-btn">국제 일정</button>
+                            <button type="button" class="tab-btn">기타</button>
                         </div>
                         <div class="sch-gd__block">
                             <div class="cal">
@@ -180,7 +180,7 @@
                                     </a>
                                 </li>
                             </ul>
-                            <button type="button" class="sch-gd__more">
+                            <button type="button" class="reload">
                                 <img src="images/icons/reload-icon.png" alt="">
                                 <span>더보기 <b>1</b><em>/3</em></span>
                             </button>
@@ -197,10 +197,10 @@
                         <h3 class="main__txt">생애주기 추천 서비스</h3>
                         <a class="main__all" href="#">전체 보기</a>
                     </div>
-                    <div class="main__tab main__tab--pd8">
-                        <button type="button" class="main__tab-btn active">성인 신체활동</button>
-                        <button type="button" class="main__tab-btn">아동 · 청소년</button>
-                        <button type="button" class="main__tab-btn">기타</button>
+                    <div class="tab tab--pd8">
+                        <button type="button" class="tab-btn active">성인 신체활동</button>
+                        <button type="button" class="tab-btn">아동 · 청소년</button>
+                        <button type="button" class="tab-btn">기타</button>
                     </div>
                     <ul class="lfc__list">
                         <li class="lfc__item">
@@ -322,7 +322,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <button type="button" class="sch-gd__more">
+                                <button type="button" class="reload">
                                     <img src="images/icons/reload-icon.png" alt="">
                                     <span>더보기 <b>1</b><em>/3</em></span>
                                 </button>
@@ -367,7 +367,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <button type="button" class="sch-gd__more">
+                                <button type="button" class="reload">
                                     <img src="images/icons/reload-icon.png" alt="">
                                     <span>더보기 <b>1</b><em>/3</em></span>
                                 </button>
@@ -510,10 +510,10 @@
                                 <h3 class="main__txt">대회 정보안내</h3>
                                 <a class="main__all" href="#">전체 보기</a>
                             </div>
-                            <div class="main__tab main__tab--mt12">
-                                <button type="button" class="main__tab-btn active">생활 체육</button>
-                                <button type="button" class="main__tab-btn">전문 체육</button>
-                                <button type="button" class="main__tab-btn">주말 체육</button>
+                            <div class="tab tab--mt12">
+                                <button type="button" class="tab-btn active">생활 체육</button>
+                                <button type="button" class="tab-btn">전문 체육</button>
+                                <button type="button" class="tab-btn">주말 체육</button>
                             </div>
                             <ul class="info-annc__list">
                                 <li class="info-annc__item">
@@ -537,7 +537,7 @@
                                     </a>
                                 </li>
                             </ul>
-                            <button type="button" class="sch-gd__more sch-gd__more--pd9">
+                            <button type="button" class="reload reload--pd9">
                                 <img src="images/icons/reload-icon.png" alt="">
                                 <span>더보기 <b>1</b><em>/3</em></span>
                             </button>
@@ -614,9 +614,9 @@
                         <div class="clc-stt">
                             <h3 class="clc__tit">민원서비스 신청 현황</h3>
                             <div class="clc-stt__block">
-                                <div class="main__tab">
-                                    <button type="button" class="main__tab-btn active">신청 중 민원</button>
-                                    <button type="button" class="main__tab-btn">신청 완료 민원</button>
+                                <div class="tab tab--mt0">
+                                    <button type="button" class="tab-btn active">신청 중 민원</button>
+                                    <button type="button" class="tab-btn">신청 완료 민원</button>
                                 </div>
                                 <ul class="clc-stt__list">
                                     <li class="clc-stt__item">
@@ -628,11 +628,11 @@
                                     <li class="clc-stt__item">
                                         <a href="#" class="clc-stt__link">
                                             <span class="clc-stt__cnn">증명서 발급 신청</span>
-                                            <span class="clc-stt__tag">승인 불가</span>
+                                            <span class="clc-stt__tag clc-stt__tag--red">승인 불가</span>
                                         </a>
                                     </li>
                                 </ul>
-                                <button type="button" class="sch-gd__more">
+                                <button type="button" class="reload">
                                     <img src="images/icons/reload-icon.png" alt="">
                                     <span>더보기 <b>1</b><em>/3</em></span>
                                 </button>
@@ -645,36 +645,766 @@
                                     <img src="images/main-images/main-image16.png" alt="">
                                     <figcaption>태릉 국제 스케이트장</figcaption>
                                 </figure>
+                                <ul class="clc-use__list">
+                                    <li class="clc-use__item">
+                                        <a href="#" class="clc-use__link">
+                                            빙상장<br>대관 안내
+                                        </a>
+                                    </li>
+                                    <li class="clc-use__item">
+                                        <a href="#" class="clc-use__link">
+                                            빙상장 3월<br>대관 신청
+                                        </a>
+                                    </li>
+                                    <li class="clc-use__item">
+                                        <a href="#" class="clc-use__link">
+                                            컬링장<br>대관 안내
+                                        </a>
+                                    </li>
+                                    <li class="clc-use__item">
+                                        <a href="#" class="clc-use__link">
+                                            컬링장 3월<br>대관 신청
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
-                            <ul class="clc-use__list">
-                                <li class="clc-use__item">
-                                    <a href="#" class="clc-use__link">
-                                        빙상장<br>대관 안내
-                                    </a>
-                                </li>
-                                <li class="clc-use__item">
-                                    <a href="#" class="clc-use__link">
-                                        빙상장 3월<br>대관 신청
-                                    </a>
-                                </li>
-                                <li class="clc-use__item">
-                                    <a href="#" class="clc-use__link">
-                                        컬링장<br>대관 안내
-                                    </a>
-                                </li>
-                                <li class="clc-use__item">
-                                    <a href="#" class="clc-use__link">
-                                        컬링장 3월<br>대관 신청
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
-                        <div class=""></div>
+                        <div class="clc-plyr">
+                            <h3 class="clc__tit">경기인 등록</h3>
+                            <div class="clc-plyr__block">
+                                <ul class="clc-plyr__list">
+                                    <li class="clc-plyr__item">
+                                        <label for="intChr" class="clc-plyr__label">종목 초성</label>
+                                        <select name="" id="intChr" class="clc-plyr__select">
+                                            <option value="">가</option>
+                                            <option value="">나</option>
+                                            <option value="">다</option>
+                                        </select>
+                                    </li>
+                                    <li class="clc-plyr__item">
+                                        <label for="itmNm" class="clc-plyr__label">종목명</label>
+                                        <select name="" id="itmNm" class="clc-plyr__select">
+                                            <option value="">골프</option>
+                                            <option value="">나</option>
+                                            <option value="">다</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                                <a href="#" class="clc-plyr__link clc-plyr__link--blue">경기인 등록</a>
+                                <a href="#" class="clc-plyr__link">이용안내</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clc-srv">
+                        <h3 class="clc__tit">신청 · 참여 서비스 </h3>
+                        <div class="clc-srv__grid">
+                            <div class="clc-srv__block">
+                                <h4 class="clc-srv__tit">
+                                    <img src="images/icons/clover-icon.png" alt="">
+                                    <span>행복나눔교실</span>
+                                </h4>
+                                <ul class="clc-src__list">
+                                    <li class="clc-src__item">
+                                        <a href="#" class="clc-src__link">
+                                            <img src="images/main-images/main-image17.png" alt="">
+                                            <dl>
+                                                <dt>프로그램 소개</dt>
+                                                <dd>다양한 체육활동 참여기회 제공</dd>
+                                            </dl>
+                                        </a>
+                                    </li>
+                                    <li class="clc-src__item">
+                                        <a href="#" class="clc-src__link">
+                                            <img src="images/main-images/main-image18.png" alt="">
+                                            <dl>
+                                                <dt>강습회 신청</dt>
+                                                <dd>스키, 볼링, 합기도, 댄스 스포츠 등</dd>
+                                            </dl>
+                                        </a>
+                                    </li>
+                                    <li class="clc-src__item">
+                                        <a href="#" class="clc-src__link">
+                                            <img src="images/main-images/main-image19.png" alt="">
+                                            <dl>
+                                                <dt>내가 신청한 학습회</dt>
+                                                <dd>나의 일지 및 신청 정보 확인</dd>
+                                            </dl>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="clc-srv__block">
+                                <h4 class="clc-srv__tit">
+                                    <img src="images/icons/skate-icon.png" alt="">
+                                    <span>태릉국제스케이트장 강습신청</span>
+                                </h4>
+                                <ul class="clc-src__list">
+                                    <li class="clc-src__item">
+                                        <a href="#" class="clc-src__link">
+                                            <img src="images/main-images/main-image17.png" alt="">
+                                            <dl>
+                                                <dt>정규강습 시간표</dt>
+                                                <dd>다양한 체육활동 참여기회 제공</dd>
+                                            </dl>
+                                        </a>
+                                    </li>
+                                    <li class="clc-src__item">
+                                        <a href="#" class="clc-src__link">
+                                            <img src="images/main-images/main-image18.png" alt="">
+                                            <dl>
+                                                <dt>정규강습 신청</dt>
+                                                <dd>스키, 볼링, 합기도, 댄스 스포츠 등</dd>
+                                            </dl>
+                                        </a>
+                                    </li>
+                                    <li class="clc-src__item">
+                                        <a href="#" class="clc-src__link">
+                                            <img src="images/main-images/main-image19.png" alt="">
+                                            <dl>
+                                                <dt>방학특강 신청</dt>
+                                                <dd>나의 일지 및 신청 정보 확인</dd>
+                                            </dl>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="clc-srv__block">
+                                <h4 class="clc-srv__tit">
+                                    <img src="images/icons/memo-icon.png" alt="">
+                                    <span>선수촌 견학 신청</span>
+                                </h4>
+                                <div class="clc-srv__box">
+                                    <div class="clc-srv__video-biv">
+                                        <img class="clc-srv__video" src="images/main-images/main-image20.jpg" alt="">
+                                        <div class="clc-srv__cover">
+                                            <button type="button" class="clc-srv__play">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                                    <path d="M15 7.63398C15.6667 8.01888 15.6667 8.98112 15 9.36602L2.25 16.7272C1.58333 17.1121 0.75 16.631 0.75 15.8612L0.75 1.13878C0.75 0.368984 1.58333 -0.112141 2.25 0.272759L15 7.63398Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="clc-srv__btbx">
+                                        <a href="#" class="clc-srv__btn clc-srv__btn--blue">선수촌 견학 안내</a>
+                                        <a href="#" class="clc-srv__btn">선수촌 견학 신청</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </article>
             <!-- // 스포츠 원클릭 -->
 
+            <!-- 스포츠클럽 검색 및 시설 예약 -->
+            <article class="rsr">
+                <div class="inner">
+                    <div class="main__tit">
+                        <h3 class="main__txt">스포츠클럽 검색 및 시설 예약</h3>
+                    </div>
+                    <div class="tab2">
+                        <button type="button" class="tab2__btn active">근거리 스포츠 클럽</button>
+                        <button type="button" class="tab2__btn">지역 스포츠 클럽</button>
+                        <button type="button" class="tab2__btn">지정 스포츠클럽</button>
+                        <button type="button" class="tab2__btn">운영 종목 검색</button>
+                    </div>
+                    <div class="dstn">
+                        <div class="dstn__lf">
+                            <h4 class="dstn__tit">
+                                <img src="images/icons/location-icon.png" alt="">
+                                <span>거리선택</span>
+                            </h4>
+                            <ul class="dstn__list">
+                                <li class="dstn__item">
+                                    <button type="button" class="dstn__btn active">10km</button>
+                                </li>
+                                <li class="dstn__item">
+                                    <button type="button" class="dstn__btn">30km</button>
+                                </li>
+                                <li class="dstn__item">
+                                    <button type="button" class="dstn__btn">70km</button>
+                                </li>
+                                <li class="dstn__item">
+                                    <button type="button" class="dstn__btn">100km</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="dstn__desc">서울특별시 송파구 잠실동에서 <span>10Km</span>이내에 <em>6</em>개 스포츠클럽이 있습니다.</p>
+                    </div>
+                    <ul class="rsr__list">
+                        <li class="rsr__item">
+                            <figure class="rsr__fgr">
+                                <img src="images/main-images/main-image21.png" alt="">
+                            </figure>
+                            <div class="rsr__flx">
+                                <span>잠실보조경기장</span>
+                                <a href="#" class="rsr__link">시설 예약</a>
+                            </div>
+                            <div class="rsr__adr">
+                                서울특별시 송파구 올림픽로 25 (잠실동)<br>
+                                02-2144-5477
+                            </div>
+                        </li>
+                        <li class="rsr__item">
+                            <figure class="rsr__fgr">
+                                <img src="images/main-images/main-image22.png" alt="">
+                            </figure>
+                            <div class="rsr__flx">
+                                <span>잠실어울림축구장</span>
+                                <a href="#" class="rsr__link">시설 예약</a>
+                            </div>
+                            <div class="rsr__adr">
+                                서울특별시 송파구 탄천동로 211 (잠실동)<br>
+                                02-2147-2821
+                            </div>
+                        </li>
+                        <li class="rsr__item">
+                            <figure class="rsr__fgr">
+                                <img src="images/main-images/main-image21.png" alt="">
+                            </figure>
+                            <div class="rsr__flx">
+                                <span>풍납1동 체육시설</span>
+                                <a href="#" class="rsr__link">시설 예약</a>
+                            </div>
+                            <div class="rsr__adr">
+                                서울특별시 송파구 한가람로 448 (풍납동,<br>
+                                동아한가람아파트) 02-2147-2821
+                            </div>
+                        </li>
+                        <li class="rsr__item">
+                            <figure class="rsr__fgr">
+                                <img src="images/main-images/main-image21.png" alt="">
+                            </figure>
+                            <div class="rsr__flx">
+                                <span>올림픽공원 제1체육관</span>
+                                <a href="#" class="rsr__link">시설 예약</a>
+                            </div>
+                            <div class="rsr__adr">
+                                서울특별시 송파구 올림픽로 424 (방이동)<br>
+                                02-410-1322
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <!-- // 스포츠클럽 검색 및 시설 예약 -->
+
+            <!-- 스포츠 허브 -->
+            <article class="hub">
+                <div class="hub__bg">
+                    <div></div>
+                </div>
+                <div class="inner">
+                    <h2 class="hub__head">
+                        <span>생애주기별 서비스 및 스포츠 관련 다양한 정보를 제공합니다.</span>
+                        <strong>스포츠 허브</strong>
+                    </h2>
+                    <div class="hub-cyc">
+                        <h3 class="hub__tit">생애주기별 서비스</h3>
+                        <div class="hub-cyc__block">
+                            <div class="hub-cyc__bg"></div>
+                            <div class="hub-cyc__tab">
+                                <button type="button" class="hub-cyc__tabbtn active">생애주기별 활동 추천</button>
+                                <button type="button" class="hub-cyc__tabbtn">생애주기별 프로그램</button>
+                                <button type="button" class="hub-cyc__tabbtn">내 주변 체육시설</button>
+                                <button type="button" class="hub-cyc__tabbtn">대회 추천</button>
+                            </div>
+                            <div class="hub-cyc__gth">
+                                <div class="hub-cyc__cntn active">
+                                    <div class="hub-cyc__desc">
+                                        <p>생애주기별 세부적인 <span>신체활동과 운동추천영상</span>을 확인해 보세요.</p>
+                                    </div>
+                                    <ul class="hub-cyc__list">
+                                        <li class="hub-cyc__item">
+                                            <div class="hub-cyc__inner">
+                                                <figure class="hub-cyc__fgr">
+                                                    <img src="images/icons/person3-icon.png" alt="">
+                                                    <figcaption>유아(3~5세)</figcaption>
+                                                </figure>
+                                                <div class="hub-cyc__box">
+                                                    <a href="#" class="hub-cyc__link hub-cyc__link--green">신체활동 지침 및 실천사례</a>
+                                                    <a href="#" class="hub-cyc__link">운동추천 영상보기</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="hub-cyc__item">
+                                            <div class="hub-cyc__inner">
+                                                <figure class="hub-cyc__fgr">
+                                                    <img src="images/icons/person4-icon.png" alt="">
+                                                    <figcaption>아동 및 청소년(6~18세)</figcaption>
+                                                </figure>
+                                                <div class="hub-cyc__box">
+                                                    <a href="#" class="hub-cyc__link hub-cyc__link--green">신체활동 지침 및 실천사례</a>
+                                                    <a href="#" class="hub-cyc__link">운동추천 영상보기</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="hub-cyc__item">
+                                            <div class="hub-cyc__inner">
+                                                <figure class="hub-cyc__fgr">
+                                                    <img src="images/icons/person5-icon.png" alt="">
+                                                    <figcaption>성인(19~64세)</figcaption>
+                                                </figure>
+                                                <div class="hub-cyc__box">
+                                                    <a href="#" class="hub-cyc__link hub-cyc__link--green">신체활동 지침 및 실천사례</a>
+                                                    <a href="#" class="hub-cyc__link">운동추천 영상보기</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="hub-cyc__item">
+                                            <div class="hub-cyc__inner">
+                                                <figure class="hub-cyc__fgr">
+                                                    <img src="images/icons/person6-icon.png" alt="">
+                                                    <figcaption>노인(65세 이상)</figcaption>
+                                                </figure>
+                                                <div class="hub-cyc__box">
+                                                    <a href="#" class="hub-cyc__link hub-cyc__link--green">신체활동 지침 및 실천사례</a>
+                                                    <a href="#" class="hub-cyc__link">운동추천 영상보기</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="hub-cyc__cntn">
+                                    <div class="hub-cyc__desc">
+                                        <p>생애주기별 <span>다양한 체육프로그램</span>이 마련되어 있습니다.</p>
+                                    </div>
+                                    <ul class="hub-cyc__list">
+                                        <li class="hub-cyc__item">
+                                            <div class="hub-cyc__inner">
+                                                <figure class="hub-cyc__fgr">
+                                                    <img src="images/icons/person4-icon.png" alt="">
+                                                    <figcaption>아동 및 청소년(6~18세)</figcaption>
+                                                </figure>
+                                                <div class="hub-cyc__box">
+                                                    <div class="hub-cyc__grid">
+                                                        <a href="#" class="hub-cyc__el">
+                                                            스포츠<br>7030
+                                                        </a>
+                                                        <a href="#" class="hub-cyc__el">
+                                                            행복나눔<br>체육교실
+                                                        </a>
+                                                        <a href="#" class="hub-cyc__el">
+                                                            선수촌견학<br>프로그램
+                                                        </a>
+                                                    </div>
+                                                    <div class="hub-cyc__grid">
+                                                        <a href="#" class="hub-cyc__el">
+                                                            스포츠<br>버스
+                                                        </a>
+                                                        <a href="#" class="hub-cyc__el">
+                                                            방과후<br>프로그램
+                                                        </a>
+                                                        <a href="#" class="hub-cyc__el">
+                                                            청소년 스포츠<br>한마당
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="hub-cyc__item">
+                                            <div class="hub-cyc__inner">
+                                                <figure class="hub-cyc__fgr">
+                                                    <img src="images/icons/person5-icon.png" alt="">
+                                                    <figcaption>성인(19~64세)</figcaption>
+                                                </figure>
+                                                <div class="hub-cyc__box">
+                                                    <div class="hub-cyc__grid">
+                                                        <a href="#" class="hub-cyc__el">
+                                                            스포츠<br>7030
+                                                        </a>
+                                                        <a href="#" class="hub-cyc__el">
+                                                            행복나눔<br>체육교실
+                                                        </a>
+                                                        <a href="#" class="hub-cyc__el">
+                                                            선수촌견학<br>프로그램
+                                                        </a>
+                                                    </div>
+                                                    <div class="hub-cyc__grid2">
+                                                        <a href="#" class="hub-cyc__el">
+                                                            스포츠<br>버스
+                                                        </a>
+                                                        <a href="#" class="hub-cyc__el">
+                                                            방과후<br>프로그램
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="hub-cyc__item">
+                                            <div class="hub-cyc__inner">
+                                                <figure class="hub-cyc__fgr">
+                                                    <img src="images/icons/person6-icon.png" alt="">
+                                                    <figcaption>노인(65세 이상)</figcaption>
+                                                </figure>
+                                                <div class="hub-cyc__box">
+                                                    <div class="hub-cyc__grid2">
+                                                        <a href="#" class="hub-cyc__el">
+                                                            스포츠<br>7030
+                                                        </a>
+                                                        <a href="#" class="hub-cyc__el">
+                                                            행복나눔<br>체육교실
+                                                        </a>
+                                                    </div>
+                                                    <div class="hub-cyc__grid2">
+                                                        <a href="#" class="hub-cyc__el">
+                                                            스포츠<br>버스
+                                                        </a>
+                                                        <a href="#" class="hub-cyc__el">
+                                                            방과후<br>프로그램
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="hub-cyc__cntn hub-cyc__cntn--mb13">
+                                    <div class="hub-cyc__desc">
+                                        <p>서울특별시 서초구에서 <span>182개</span>의 내 주변 <span>체육시설</span>이 있습니다.</p>
+                                    </div>
+                                    <ul class="hub-cyc__list2">
+                                        <li class="hub-cyc__item2">
+                                            <a href="#" class="hub-cyc__link2">
+                                                <figure class="hub-cyc__fgr2">
+                                                    <img src="images/main-images/main-image25.png" alt="">
+                                                </figure>
+                                                <dl>
+                                                    <dt>서초종합체육관</dt>
+                                                    <dd>서울특별시 서초구 양재대로12길 73-48(원자동)</dd>
+                                                </dl>
+                                            </a>
+                                        </li>
+                                        <li class="hub-cyc__item2">
+                                            <a href="#" class="hub-cyc__link2">
+                                                <figure class="hub-cyc__fgr2">
+                                                    <img src="images/main-images/main-image25.png" alt="">
+                                                </figure>
+                                                <dl>
+                                                    <dt>신동공원</dt>
+                                                    <dd>서울 서초구 잠원동 58-14</dd>
+                                                </dl>
+                                            </a>
+                                        </li>
+                                        <li class="hub-cyc__item2">
+                                            <a href="#" class="hub-cyc__link2">
+                                                <figure class="hub-cyc__fgr2">
+                                                    <img src="images/main-images/main-image25.png" alt="">
+                                                </figure>
+                                                <dl>
+                                                    <dt>서일교육문화회관</dt>
+                                                    <dd>서울특별시 서초구 서운로21길 2 (서초동)</dd>
+                                                </dl>
+                                            </a>
+                                        </li>
+                                        <li class="hub-cyc__item2">
+                                            <a href="#" class="hub-cyc__link2">
+                                                <figure class="hub-cyc__fgr2">
+                                                    <img src="images/main-images/main-image25.png" alt="">
+                                                </figure>
+                                                <dl>
+                                                    <dt>롯데캐슬클래식</dt>
+                                                    <dd>서울특별시 서초구 서운로 197</dd>
+                                                </dl>
+                                            </a>
+                                        </li>
+                                        <li class="hub-cyc__item2">
+                                            <a href="#" class="hub-cyc__link2">
+                                                <figure class="hub-cyc__fgr2">
+                                                    <img src="images/main-images/main-image25.png" alt="">
+                                                </figure>
+                                                <dl>
+                                                    <dt>아크로비스타</dt>
+                                                    <dd>서울 서초구 서초중앙로 168</dd>
+                                                </dl>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="hub-cyc__cntn">
+                                    <div class="hub-cyc__desc">
+                                        <p>생애주기별 <span>추천 대회</span>를 확인해보세요. </p>
+                                        <a href="#">더보기</a>
+                                    </div>
+                                    <ul class="hub-cyc__list3">
+                                        <li class="hub-cyc__item3 active">
+                                            <button type="button" class="hub-cyc__toggle">
+                                                <strong>추천 대회</strong>
+                                                <span>
+                                                    Recommendation<br>
+                                                    Competition
+                                                </span>
+                                                <img class="hub-cyc__prsn" src="images/icons/person7-icon.png" alt="">
+                                            </button>
+                                            <div class="hub-cyc__grid3">
+                                                <a href="#" class="hub-cyc__link3">
+                                                    <dl>
+                                                        <dt>대회명</dt>
+                                                        <dd>제 71회 전국남녀종별탁구선수권대회</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>장 소</dt>
+                                                        <dd>강원, 강릉</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>신청기간</dt>
+                                                        <dd>2025.03.06 ~ 2025.03.28</dd>
+                                                    </dl>
+                                                </a>
+                                                <a href="#" class="hub-cyc__link3">
+                                                    <dl>
+                                                        <dt>대회명</dt>
+                                                        <dd>제 67회 전국조정선수권대회</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>장 소</dt>
+                                                        <dd>김해시, 대동생태체육공원</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>신청기간</dt>
+                                                        <dd>2025.03.06 ~ 2025.03.20</dd>
+                                                    </dl>
+                                                </a>
+                                                <a href="#" class="hub-cyc__link3">
+                                                    <dl>
+                                                        <dt>대회명</dt>
+                                                        <dd>2025 대학핸드볼 리그</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>장 소</dt>
+                                                        <dd>강원, 티백</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>신청기간</dt>
+                                                        <dd>2025.03.06 ~ 2025.03.28</dd>
+                                                    </dl>
+                                                </a>
+                                                <a href="#" class="hub-cyc__link3">
+                                                    <dl>
+                                                        <dt>대회명</dt>
+                                                        <dd>제 5회 태산배 전국수쿼시 선수권대회</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>장 소</dt>
+                                                        <dd>나주 스쿼시경기장</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>신청기간</dt>
+                                                        <dd>2025.03.06 ~ 2025.03.17</dd>
+                                                    </dl>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="hub-cyc__item3">
+                                            <button type="button" class="hub-cyc__toggle">
+                                                <strong>지난 대회</strong>
+                                                <span>
+                                                    Previous<br>
+                                                    Competition
+                                                </span>
+                                                <img class="hub-cyc__prsn" src="images/icons/person8-icon.png" alt="">
+                                            </button>
+                                        </li>
+                                        <li class="hub-cyc__item3">
+                                            <button type="button" class="hub-cyc__toggle">
+                                                <strong>대회 개최계획</strong>
+                                                <span>
+                                                    Competition<br>
+                                                    Hosting Plan
+                                                </span>
+                                                <img class="hub-cyc__prsn hub-cyc__prsn--half" src="images/icons/person9-icon.png" alt="">
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hub-mdm">
+                        <h3 class="hub__tit">스포츠 미디어</h3>
+                        <div class="hub-mdm__grid">
+                            <div class="hub-mdm__block">
+                                <h4 class="hub-mdm__tit">
+                                    <span>스포츠원 기사</span>
+                                    <a href="#">더보기</a>
+                                </h4>
+                                <ul class="hub-mdm__list">
+                                    <li class="hub-mdm__item">
+                                        <a href="#" class="hub-mdm__link">
+                                            <strong>이제는 명실상부 슈퍼푸드 콜리플라워</strong>
+                                            <span>2022년 1월호</span>
+                                        </a>
+                                    </li>
+                                    <li class="hub-mdm__item">
+                                        <a href="#" class="hub-mdm__link">
+                                            <strong>내게 맞는 겨울철 운동법을 찾아라!</strong>
+                                            <span>2022년 1월호</span>
+                                        </a>
+                                    </li>
+                                    <li class="hub-mdm__item">
+                                        <a href="#" class="hub-mdm__link">
+                                            <strong>홈트의 단점을 극복, 인공지능 기반</strong>
+                                            <span>2022년 1월호</span>
+                                        </a>
+                                    </li>
+                                    <li class="hub-mdm__item">
+                                        <a href="#" class="hub-mdm__link">
+                                            <strong>따로 또 함께 ‘버추얼 레이스’를 아시나요?</strong>
+                                            <span>2022년 1월호</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="hub-mdm__block">
+                                <h4 class="hub-mdm__tit">
+                                    <span>스포츠원 E-Book</span>
+                                    <a href="#">더보기</a>
+                                </h4>
+                                <ul class="hub-mdm__list2">
+                                    <li class="hub-mdm__item2">
+                                        <img src="images/main-images/main-image26.png" alt="">
+                                        <span>2024년 12월</span>
+                                        <div class="hub-mdm__btbx">
+                                            <a href="#" class="hub-mdm__btn">PDF</a>
+                                            <a href="#" class="hub-mdm__btn">E-Book</a>
+                                        </div>
+                                    </li>
+                                    <li class="hub-mdm__item2">
+                                        <img src="images/main-images/main-image27.png" alt="">
+                                        <span>2024년 12월</span>
+                                        <div class="hub-mdm__btbx">
+                                            <a href="#" class="hub-mdm__btn">PDF</a>
+                                            <a href="#" class="hub-mdm__btn">E-Book</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="hub-mdm__block">
+                                <div class="hub-mdm__tab">
+                                    <button type="button" class="hub-mdm__tabbtn active">홍보영상</button>
+                                    <button type="button" class="hub-mdm__tabbtn">배워봐요</button>
+                                </div>
+                                <ul class="hub-mdm__list3">
+                                    <li class="hub-mdm__item3">
+                                        <a href="#" class="hub-mdm__link3">
+                                            <figure>
+                                                <img src="images/main-images/main-image28.png" alt="">
+                                                <i>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 17" fill="none">
+                                                        <path d="M15 7.63398C15.6667 8.01888 15.6667 8.98112 15 9.36602L2.25 16.7272C1.58333 17.1121 0.75 16.631 0.75 15.8612L0.75 1.13878C0.75 0.368984 1.58333 -0.112141 2.25 0.272759L15 7.63398Z" fill="white"></path>
+                                                    </svg>
+                                                </i>
+                                            </figure>
+                                            <span>2024 ‘스포츠 7330’ 캠페인 공익광고</span>
+                                        </a>
+                                    </li>
+                                    <li class="hub-mdm__item3">
+                                        <a href="#" class="hub-mdm__link3">
+                                            <figure>
+                                                <img src="images/main-images/main-image29.png" alt="">
+                                                <i>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 17" fill="none">
+                                                        <path d="M15 7.63398C15.6667 8.01888 15.6667 8.98112 15 9.36602L2.25 16.7272C1.58333 17.1121 0.75 16.631 0.75 15.8612L0.75 1.13878C0.75 0.368984 1.58333 -0.112141 2.25 0.272759L15 7.63398Z" fill="white"></path>
+                                                    </svg>
+                                                </i>
+                                            </figure>
+                                            <span>2024 ‘스포츠 7330’ 캠페인 공익광고</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="hub-mdm__box">
+                                    <button type="button" class="reload reload--mt0">
+                                        <img src="images/icons/reload-icon.png" alt="">
+                                        <span>더보기 <b>1</b><em>/3</em></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hub-mdm__grid2">
+                            <div class="hub-mdm__block">
+                                <h4 class="hub-mdm__tit">
+                                    <span>스포츠원 기사</span>
+                                </h4>
+                                <div class="hub-mdm__card">
+                                    <a href="#" class="hub-mdm__el">
+                                        <img src="images/main-images/main-image30.png" alt="">
+                                        <strong>제106회 전국 동계 체육대회 (스노보드)</strong>
+                                        <span>2025.02.17</span>
+                                    </a>
+                                    <button type="button" class="reload">
+                                        <img src="images/icons/reload-icon.png" alt="">
+                                        <span>더보기 <b>1</b><em>/3</em></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="hub-mdm__block">
+                                <h4 class="hub-mdm__tit">
+                                    <span>스포츠클럽 베스트영상</span>
+                                </h4>
+                                <div class="hub-mdm__card">
+                                    <a href="#" class="hub-mdm__el">
+                                        <img src="images/main-images/main-image31.png" alt="">
+                                        <strong>[배드민턴]효성체육문화센터</strong>
+                                        <span>계양스포츠클럽 2025.03.10</span>
+                                    </a>
+                                    <button type="button" class="reload">
+                                        <img src="images/icons/reload-icon.png" alt="">
+                                        <span>더보기 <b>1</b><em>/3</em></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="hub-mdm__block">
+                                <h4 class="hub-mdm__tit">
+                                    <span>인터뷰/다큐멘터리</span>
+                                </h4>
+                                <div class="hub-mdm__card">
+                                    <a href="#" class="hub-mdm__el">
+                                        <img src="images/main-images/main-image32.png" alt="">
+                                        <strong>함기용[마라톤] 1950 보스톤마라톤 우승</strong>
+                                        <span>인터뷰일자 2015.06.05</span>
+                                    </a>
+                                    <button type="button" class="reload">
+                                        <img src="images/icons/reload-icon.png" alt="">
+                                        <span>더보기 <b>1</b><em>/3</em></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="hub-mdm__block">
+                                <h4 class="hub-mdm__tit">
+                                    <span>생활체육대축전</span>
+                                </h4>
+                                <div class="hub-mdm__card">
+                                    <a href="#" class="hub-mdm__el">
+                                        <img src="images/main-images/main-image33.png" alt="">
+                                        <strong>특정대상별안전가이드</strong>
+                                    </a>
+                                    <button type="button" class="reload">
+                                        <img src="images/icons/reload-icon.png" alt="">
+                                        <span>더보기 <b>1</b><em>/3</em></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- // 스포츠 허브 -->
+
+            <!-- 스포츠 정보 -->
+            <article class="spr">
+                <div class="inner">
+                    <div class="main__tit">
+                        <h3 class="main__txt">스포츠 정보</h3>
+                    </div>
+                    <div class="tab2">
+                        <button type="button" class="tab2__btn tab2__btn--green active">전국 체육대회</button>
+                        <button type="button" class="tab2__btn tab2__btn--green">전국동계체육대회</button>
+                        <button type="button" class="tab2__btn tab2__btn--green">전국소년체육대회</button>
+                        <button type="button" class="tab2__btn tab2__btn--green">운영 종목 검색</button>
+                    </div>
+                </div>
+            </article>
+            <!-- // 스포츠 정보 -->
         </section>
         <!-- // contents -->
 
