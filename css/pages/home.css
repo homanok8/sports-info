@@ -2802,6 +2802,7 @@
 
 .spr {
     padding: 4.6rem 0;
+    overflow: hidden;
 }
 
 .spr__cntn {
@@ -2833,13 +2834,33 @@
 }
 
 .spr__slide {
+    height: 26rem;
     position: relative;
 }
 
+.spr__viewbox {
+    width: 100vw;
+    max-width: calc(100% + 6rem);
+    height: 32rem;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 .spr__list {
+    width: calc(100% - 6rem);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1.6rem;
+    position: absolute;
+    top: 3rem;
+    left: calc(100% + 3rem);
+}
+
+.spr__list:first-child {
+    left: 3rem;
 }
 
 .spr__item {
@@ -3158,19 +3179,29 @@
     position: relative;
 }
 
-.chrt__view {
+.chrt__cover {
+    width: 100%;
+    height: 100%;
     padding: 1.6rem 2.4rem;
+    overflow: hidden;
+}
+
+.chrt__view {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .chrt__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2.3rem;
+    display: flex;
+    transition: all 0.3s;
 }
 
 .chrt__item {
+    flex: 0 0 33.33%;
     display: flex;
     flex-direction: column;
+    padding: 0 0.7rem;
 }
 
 .chrt__tit {
@@ -3242,10 +3273,12 @@
 }
 
 .chrt__line--skyblue {
+    width: 30.63%;
     background-color: var(--color-accent-cyan);
 }
 
 .chrt__line--blue {
+    width: 46.88%;
     background-color: var(--color-primary-normal);
 }
 
@@ -3270,6 +3303,7 @@
     top: 58%;
     right: 0;
     transform: translateY(-50%);
+    z-index: 2;
 }
 
 .chrt__btn--prev {

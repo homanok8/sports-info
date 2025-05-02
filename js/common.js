@@ -158,7 +158,68 @@ $(function() {
     });
 
     // 스포츠정보 슬라이드
-    
+    const $sprItems = $('.spr__list');
+    const totalSpr = $sprItems.length;
+    let sprPage = 0;
+
+    $('#sprNextBtn').click(function() {
+        if (sprPage < totalSpr - 1) {
+            $sprItems.eq(sprPage).stop().animate({'left': '-100%'});
+            sprPage++;
+            $sprItems.eq(sprPage).stop().css({'left': '110%'});
+            $sprItems.eq(sprPage).stop().animate({'left': '3rem'});
+            $('.spr__stts-btn').removeClass('active');
+            $('.spr__stts-btn').eq(sprPage).addClass('active');
+        }
+        
+    });
+
+    $('#sprPrevBtn').click(function() {
+        if (sprPage > 0) {
+            $sprItems.eq(sprPage).stop().animate({'left': '110%'});
+            sprPage--;
+            $sprItems.eq(sprPage).stop().css({'left': '-100%'});
+            $sprItems.eq(sprPage).stop().animate({'left': '3rem'});
+            $('.spr__stts-btn').removeClass('active');
+            $('.spr__stts-btn').eq(sprPage).addClass('active');
+        }
+    });
+
+    $('.spr__stts-btn').click(function() {
+        $sprItems.eq(sprPage).stop().animate({'left': '-100%'});
+        sprPage = $(this).index();
+        $sprItems.eq(sprPage).stop().css({'left': '110%'});
+        $sprItems.eq(sprPage).stop().animate({'left': '3rem'});
+        $('.spr__stts-btn').removeClass('active');
+        $('.spr__stts-btn').eq(sprPage).addClass('active');
+    });
+
+    // 스포츠 통계 등록 현황
+    const chrtItemsPerPage = 3;
+    const $chrtSlider = $('.chrt__list');
+    const $chrtItems = $('.chrt__item');
+    const chrtTotalItems = $chrtItems.length;
+    const chrtTotalPages = Math.ceil(chrtTotalItems / chrtItemsPerPage);
+    let chrtPage = 0;
+
+    function chrtSlider() {
+        const offset = -100 * chrtPage;
+        $chrtSlider.css('transform', `translateX(${offset}%)`);
+    }
+
+    $('#chrtNextBtn').click(function() {
+        if (chrtPage < chrtTotalPages - 1) {
+            chrtPage++;
+            chrtSlider();
+        }
+    });
+
+    $('#chrtPrevBtn').click(function() {
+        if (chrtPage > 0) {
+            chrtPage--;
+            chrtSlider();
+        }
+    });
 
 
 });
