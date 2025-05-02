@@ -100,7 +100,7 @@
                         </div>
                         <div class="banner">
                             <div class="banner__block">
-                                <ul class="banner__list">
+                                <ul class="banner__list" id="bannerList">
                                     <li class="banner__item">
                                         <img class="banner__img" src="images/main-images/banner-image.png" alt="">
                                         <div class="banner__txt">
@@ -117,10 +117,10 @@
                                     </li>
                                 </ul>
                                 <div class="banner__status">
-                                    <button type="button" class="banner__func">
+                                    <button type="button" class="banner__func" id="bannerPlayBtn">
                                         <span></span>
                                     </button>
-                                    <div class="banner__crnt">
+                                    <div class="banner__crnt" id="bannerNum">
                                         <span>1/</span>
                                         <em>3</em>
                                     </div>
@@ -558,54 +558,74 @@
                     <div class="clc-crt">
                         <h3 class="clc__tit">증명서 발급</h3>
                         <div class="clc-crt__block">
-                            <button class="clc-crt__slide-btn" type="button">
+                            <button class="clc-crt__slide-btn" type="button" id="crtPrevBtn">
                                 <img src="images/icons/chevron-icon.png" alt="">
                             </button>
-                            <ul class="clc-crt__list">
-                                <li class="clc-crt__item">
-                                    <a href="#" class="clc-crt__link">
-                                        <img src="images/main-images/service-image01.png" alt="">
-                                        <span>교육<br>수료증</span>
-                                    </a>
-                                </li>
-                                <li class="clc-crt__item">
-                                    <a href="#" class="clc-crt__link">
-                                        <img src="images/main-images/service-image07.png" alt="">
-                                        <span>경기인 등록<br>확인서</span>
-                                    </a>
-                                </li>
-                                <li class="clc-crt__item">
-                                    <a href="#" class="clc-crt__link">
-                                        <img src="images/main-images/service-image08.png" alt="">
-                                        <span>경기 참가<br>확인서</span>
-                                    </a>
-                                </li>
-                                <li class="clc-crt__item">
-                                    <a href="#" class="clc-crt__link">
-                                        <img src="images/main-images/service-image04.png" alt="">
-                                        <span>체육인(선수)<br>증명서</span>
-                                    </a>
-                                </li>
-                                <li class="clc-crt__item">
-                                    <a href="#" class="clc-crt__link">
-                                        <img src="images/main-images/service-image05.png" alt="">
-                                        <span>국가대표<br>확인서</span>
-                                    </a>
-                                </li>
-                                <li class="clc-crt__item">
-                                    <a href="#" class="clc-crt__link">
-                                        <img src="images/main-images/service-image06.png" alt="">
-                                        <span>스포츠 클럽<br>대회 참가</span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <button class="clc-crt__slide-btn next" type="button">
+                            <div class="clc-crt__slide" id="crtSlide">
+                                <ul class="clc-crt__list">
+                                    <li class="clc-crt__item">
+                                        <a href="#" class="clc-crt__link">
+                                            <img src="images/main-images/service-image01.png" alt="">
+                                            <span>교육<br>수료증</span>
+                                        </a>
+                                    </li>
+                                    <li class="clc-crt__item">
+                                        <a href="#" class="clc-crt__link">
+                                            <img src="images/main-images/service-image07.png" alt="">
+                                            <span>경기인 등록<br>확인서</span>
+                                        </a>
+                                    </li>
+                                    <li class="clc-crt__item">
+                                        <a href="#" class="clc-crt__link">
+                                            <img src="images/main-images/service-image08.png" alt="">
+                                            <span>경기 참가<br>확인서</span>
+                                        </a>
+                                    </li>
+                                    <li class="clc-crt__item">
+                                        <a href="#" class="clc-crt__link">
+                                            <img src="images/main-images/service-image04.png" alt="">
+                                            <span>체육인(선수)<br>증명서</span>
+                                        </a>
+                                    </li>
+                                    <li class="clc-crt__item">
+                                        <a href="#" class="clc-crt__link">
+                                            <img src="images/main-images/service-image05.png" alt="">
+                                            <span>국가대표<br>확인서</span>
+                                        </a>
+                                    </li>
+                                    <li class="clc-crt__item">
+                                        <a href="#" class="clc-crt__link">
+                                            <img src="images/main-images/service-image06.png" alt="">
+                                            <span>스포츠 클럽<br>대회 참가</span>
+                                        </a>
+                                    </li>
+                                    <li class="clc-crt__item">
+                                        <a href="#" class="clc-crt__link">
+                                            <img src="images/main-images/service-image01.png" alt="">
+                                            <span>교육<br>수료증</span>
+                                        </a>
+                                    </li>
+                                    <li class="clc-crt__item">
+                                        <a href="#" class="clc-crt__link">
+                                            <img src="images/main-images/service-image07.png" alt="">
+                                            <span>경기인 등록<br>확인서</span>
+                                        </a>
+                                    </li>
+                                    <li class="clc-crt__item">
+                                        <a href="#" class="clc-crt__link">
+                                            <img src="images/main-images/service-image08.png" alt="">
+                                            <span>경기 참가<br>확인서</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="clc-crt__slide-btn next" type="button" id="crtNextBtn">
                                 <img src="images/icons/chevron-icon.png" alt="">
                             </button>
                         </div>
                         <div class="clc-crt__btbx">
                             <div class="clc-crt__center">
-                                <button type="button" class="clc-crt__btn"></button>
+                                <button type="button" class="clc-crt__btn active"></button>
                                 <button type="button" class="clc-crt__btn"></button>
                             </div>
                         </div>
@@ -1402,9 +1422,559 @@
                         <button type="button" class="tab2__btn tab2__btn--green">전국소년체육대회</button>
                         <button type="button" class="tab2__btn tab2__btn--green">운영 종목 검색</button>
                     </div>
+                    <div class="spr__ght">
+                        <div class="spr__cntn">
+                            <div class="spr__desc">
+                                <p>역대 대회를 클릭하시면 대회 개요, <span>대회 일정 및 결과 등 다양한 대회 정보를 확인</span>하실 수 있습니다.</p>
+                            </div>
+                        </div>
+                        <div class="spr__block">
+                            <div class="spr__slide">
+                                <button type="button" class="spr__slide-btn">
+                                    <img src="images/icons/chevron-icon.png" alt="">
+                                </button>
+                                <div class="spr__viewbox">
+                                    <ul class="spr__list">
+                                        <li class="spr__item">
+                                            <a href="#" class="spr__link">
+                                                <span>제 105회 전국체육대회</span>
+                                                <strong>경상남도(2024)</strong>
+                                            </a>
+                                        </li>
+                                        <li class="spr__item">
+                                            <a href="#" class="spr__link">
+                                                <span>제 104회 전국체육대회</span>
+                                                <strong>전라남도(2023)</strong>
+                                            </a>
+                                        </li>
+                                        <li class="spr__item">
+                                            <a href="#" class="spr__link">
+                                                <span>제 105회 전국체육대회</span>
+                                                <strong>울산광역시(2022)</strong>
+                                            </a>
+                                        </li>
+                                        <li class="spr__item">
+                                            <a href="#" class="spr__link">
+                                                <span>제 105회 전국체육대회</span>
+                                                <strong>경상북도(2021)</strong>
+                                            </a>
+                                        </li>
+                                        <li class="spr__item">
+                                            <a href="#" class="spr__link">
+                                                <span>제 101회 전국체육대회</span>
+                                                <strong>(2020)</strong>
+                                            </a>
+                                        </li>
+                                        <li class="spr__item">
+                                            <a href="#" class="spr__link">
+                                                <span>제 105회 전국 체육대회</span>
+                                                <strong>경상남도(2024)</strong>
+                                            </a>
+                                        </li>
+                                        <li class="spr__item">
+                                            <a href="#" class="spr__link">
+                                                <span>제 105회 전국 체육대회</span>
+                                                <strong>경상남도(2024)</strong>
+                                            </a>
+                                        </li>
+                                        <li class="spr__item">
+                                            <a href="#" class="spr__link">
+                                                <span>제 105회 전국 체육대회</span>
+                                                <strong>경상남도(2024)</strong>
+                                            </a>
+                                        </li>
+                                        <li class="spr__item">
+                                            <a href="#" class="spr__link">
+                                                <span>제 105회 전국 체육대회</span>
+                                                <strong>경상남도(2024)</strong>
+                                            </a>
+                                        </li>
+                                        <li class="spr__item">
+                                            <a href="#" class="spr__link">
+                                                <span>제 105회 전국 체육대회</span>
+                                                <strong>경상남도(2024)</strong>
+                                            </a>
+                                        </li>
+                                        <li class="spr__item">
+                                            <a href="#" class="spr__link">
+                                                <span>제 105회 전국 체육대회</span>
+                                                <strong>경상남도(2024)</strong>
+                                            </a>
+                                        </li>
+                                        <li class="spr__item">
+                                            <a href="#" class="spr__link">
+                                                <span>제 105회 전국 체육대회</span>
+                                                <strong>경상남도(2024)</strong>
+                                            </a>
+                                        </li>
+                                        <li class="spr__item">
+                                            <a href="#" class="spr__link">
+                                                <span>제 105회 전국 체육대회</span>
+                                                <strong>경상남도(2024)</strong>
+                                            </a>
+                                        </li>
+                                        <li class="spr__item">
+                                            <a href="#" class="spr__link">
+                                                <span>제 105회 전국 체육대회</span>
+                                                <strong>경상남도(2024)</strong>
+                                            </a>
+                                        </li>
+                                        <li class="spr__item">
+                                            <a href="#" class="spr__link">
+                                                <span>제 105회 전국 체육대회</span>
+                                                <strong>경상남도(2024)</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="spr__slide-btn spr__slide-btn--next">
+                                    <img src="images/icons/chevron-icon.png" alt="">
+                                </button>
+                            </div>
+                            <div class="spr__stts">
+                                <button type="button" class="spr__stts-btn active"></button>
+                                <button type="button" class="spr__stts-btn"></button>
+                                <button type="button" class="spr__stts-btn"></button>
+                                <button type="button" class="spr__stts-btn"></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </article>
             <!-- // 스포츠 정보 -->
+
+            <!-- 스포츠 데이터랩, 채용정보 -->
+            <article class="lab">
+                <div class="lab__bg"><i></i></div>
+                <div class="inner">
+                    <div class="lab__top">
+                        <div class="main__tit">
+                            <h3 class="main__txt">스포츠 데이터랩</h3>
+                        </div>
+                        <div class="lab__grid">
+                            <div class="lab__wiki">
+                                <h4 class="lab__tit">
+                                    <span>
+                                        <img src="images/icons/book-icon.png" alt="">
+                                        스포츠 Wiki
+                                    </span>
+                                </h4>
+                                <img class="lab__wiki-icon" src="images/icons/earth-icon.png" alt="">
+                                <ul class="lab__wiki-list">
+                                    <li class="lab__wiki-item">
+                                        <a href="#" class="lab__wiki-link">스포츠 백과사전전</a>
+                                    </li>
+                                    <li class="lab__wiki-item">
+                                        <a href="#" class="lab__wiki-link">경기규칙칙/법규</a>
+                                    </li>
+                                    <li class="lab__wiki-item">
+                                        <a href="#" class="lab__wiki-link">경기규칙/법규</a>
+                                    </li>
+                                    <li class="lab__wiki-item">
+                                        <a href="#" class="lab__wiki-link">사용자 참여 Wiki</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="chrt">
+                                <h4 class="lab__tit">
+                                    <span>스포츠 통계 등록 현황</span>
+                                </h4>
+                                <div class="chrt__slide">
+                                    <button type="button" class="chrt__btn chrt__btn--prev">
+                                        <img src="images/icons/arrow-white-icon.png" alt="">
+                                    </button>
+                                    <div class="chrt__view">
+                                        <ul class="chrt__list">
+                                            <li class="chrt__item">
+                                                <span class="chrt__tit">선수 현황</span>
+                                                <div class="chrt__block">
+                                                    <div class="chrt__detail">
+                                                        <span class="chrt__name">여</span>
+                                                        <div class="chrt__bx">
+                                                            <div class="chrt__line"></div>
+                                                        </div>
+                                                        <span class="chrt__num">27,426</span>
+                                                    </div>
+                                                    <div class="chrt__detail">
+                                                        <span class="chrt__name">남</span>
+                                                        <div class="chrt__bx">
+                                                            <div class="chrt__line chrt__line--skyblue"></div>
+                                                        </div>
+                                                        <span class="chrt__num">66,029</span>
+                                                    </div>
+                                                    <div class="chrt__detail">
+                                                        <span class="chrt__name">합계</span>
+                                                        <div class="chrt__bx">
+                                                            <div class="chrt__line chrt__line--blue"></div>
+                                                        </div>
+                                                        <span class="chrt__num">99,426</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="chrt__item">
+                                                <span class="chrt__tit">지도자자 현황</span>
+                                                <div class="chrt__block">
+                                                    <div class="chrt__detail">
+                                                        <span class="chrt__name">여</span>
+                                                        <div class="chrt__bx">
+                                                            <div class="chrt__line"></div>
+                                                        </div>
+                                                        <span class="chrt__num">27,426</span>
+                                                    </div>
+                                                    <div class="chrt__detail">
+                                                        <span class="chrt__name">남</span>
+                                                        <div class="chrt__bx">
+                                                            <div class="chrt__line chrt__line--skyblue"></div>
+                                                        </div>
+                                                        <span class="chrt__num">66,029</span>
+                                                    </div>
+                                                    <div class="chrt__detail">
+                                                        <span class="chrt__name">합계</span>
+                                                        <div class="chrt__bx">
+                                                            <div class="chrt__line chrt__line--blue"></div>
+                                                        </div>
+                                                        <span class="chrt__num">99,426</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="chrt__item">
+                                                <span class="chrt__tit">심판 현황</span>
+                                                <div class="chrt__block">
+                                                    <div class="chrt__detail">
+                                                        <span class="chrt__name">여</span>
+                                                        <div class="chrt__bx">
+                                                            <div class="chrt__line"></div>
+                                                        </div>
+                                                        <span class="chrt__num">27,426</span>
+                                                    </div>
+                                                    <div class="chrt__detail">
+                                                        <span class="chrt__name">남</span>
+                                                        <div class="chrt__bx">
+                                                            <div class="chrt__line chrt__line--skyblue"></div>
+                                                        </div>
+                                                        <span class="chrt__num">66,029</span>
+                                                    </div>
+                                                    <div class="chrt__detail">
+                                                        <span class="chrt__name">합계</span>
+                                                        <div class="chrt__bx">
+                                                            <div class="chrt__line chrt__line--blue"></div>
+                                                        </div>
+                                                        <span class="chrt__num">99,426</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button type="button" class="chrt__btn">
+                                        <img src="images/icons/arrow-white-icon.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="lab__list">
+                            <li class="lab__item">
+                                <a href="#" class="lab__link">대회운영통계</a>
+                            </li>
+                            <li class="lab__item">
+                                <a href="#" class="lab__link">생활체육통계</a>
+                            </li>
+                            <li class="lab__item">
+                                <a href="#" class="lab__link">선수지도자 등록통계</a>
+                            </li>
+                            <li class="lab__item">
+                                <a href="#" class="lab__link">전국종합대회통계</a>
+                            </li>
+                            <li class="lab__item">
+                                <a href="#" class="lab__link">팀 등록 통계</a>
+                            </li>
+                            <li class="lab__item">
+                                <a href="#" class="lab__link">학교 체육 통계</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="emp">
+                        <div class="main__tit">
+                            <h3 class="main__txt">채용정보</h3>
+                        </div>
+                        <div class="emp__grid">
+                            <div class="emp__block">
+                                <h4 class="lab__tit">
+                                    <span>체육단체 채용공고</span>
+                                    <a href="#">더보기</a>
+                                </h4>
+                                <ul class="emp__list">
+                                    <li class="emp__item">
+                                        <a href="#" class="emp__link">
+                                            <div class="emp__txt">
+                                                <strong>대한볼링협회 2025년 국제업무 전문인력 채용공고</strong>
+                                                <span>대한볼링협회</span>
+                                            </div>
+                                            <span>2025.03.02</span>
+                                        </a>
+                                    </li>
+                                    <li class="emp__item">
+                                        <a href="#" class="emp__link">
+                                            <div class="emp__txt">
+                                                <strong>대한볼링협회 2025년 국제업무 전문인력 채용공고</strong>
+                                                <span>대한볼링협회</span>
+                                            </div>
+                                            <span>2025.03.02</span>
+                                        </a>
+                                    </li>
+                                    <li class="emp__item">
+                                        <a href="#" class="emp__link">
+                                            <div class="emp__txt">
+                                                <strong>2025년 제1차 제천시체육회 사무직 경력직 직원 채용공고</strong>
+                                                <span>제천시체육회</span>
+                                            </div>
+                                            <span>2025.03.02</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="emp__block">
+                                <h4 class="lab__tit">
+                                    <span>은퇴선수 채용공고</span>
+                                    <a href="#">더보기</a>
+                                </h4>
+                                <ul class="emp__list">
+                                    <li class="emp__item">
+                                        <a href="#" class="emp__link">
+                                            <div class="emp__txt">
+                                                <strong>[2024 스포츠산업채용박람회] F45코리아-직영점코치채용(풀타임,프리랜서)</strong>
+                                                <span>주식회사 임브레스</span>
+                                            </div>
+                                            <span>2025.03.02</span>
+                                        </a>
+                                    </li>
+                                    <li class="emp__item">
+                                        <a href="#" class="emp__link">
+                                            <div class="emp__txt">
+                                                <strong>(주)영일 대구파티마병원 영양팀 배식원 모집</strong>
+                                                <span>대한볼링협회</span>
+                                            </div>
+                                            <span>2025.03.02</span>
+                                        </a>
+                                    </li>
+                                    <li class="emp__item">
+                                        <a href="#" class="emp__link">
+                                            <div class="emp__txt">
+                                                <strong>(주)태웅식품 연구본부(품질)채용공고</strong>
+                                                <span>제천시체육회</span>
+                                            </div>
+                                            <span>2025.03.02</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="emp__block">
+                                <h4 class="lab__tit">
+                                    <span>국제스포츠 채용공고</span>
+                                    <a href="#">더보기</a>
+                                </h4>
+                                <ul class="emp__list">
+                                    <li class="emp__item">
+                                        <a href="#" class="emp__link">
+                                            <div class="emp__txt">
+                                                <strong>국제카누연맹</strong>
+                                                <span>대한볼링협회</span>
+                                            </div>
+                                            <span>2025.03.02</span>
+                                        </a>
+                                    </li>
+                                    <li class="emp__item">
+                                        <a href="#" class="emp__link">
+                                            <div class="emp__txt">
+                                                <strong>대한볼링협회 2025년 정규직 일반(체육행정)채용공고</strong>
+                                                <span>대한볼링협회</span>
+                                            </div>
+                                            <span>2025.03.02</span>
+                                        </a>
+                                    </li>
+                                    <li class="emp__item">
+                                        <a href="#" class="emp__link">
+                                            <div class="emp__txt">
+                                                <strong>2025년 제1차 제천시체육회 사무직 경력직 직원 채용공고</strong>
+                                                <span>제천시체육회</span>
+                                            </div>
+                                            <span>2025.03.02</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="emp__block">
+                                <h4 class="lab__tit">
+                                    <span>스포츠클럽 일자리정보</span>
+                                    <a href="#">더보기</a>
+                                </h4>
+                                <ul class="emp__list">
+                                    <li class="emp__item">
+                                        <a href="#" class="emp__link">
+                                            <div class="emp__txt">
+                                                <strong>대한볼링협회 2025년 국제업무 전문인력 채용공고</strong>
+                                                <span>대한볼링협회</span>
+                                            </div>
+                                            <span>2025.03.02</span>
+                                        </a>
+                                    </li>
+                                    <li class="emp__item">
+                                        <a href="#" class="emp__link">
+                                            <div class="emp__txt">
+                                                <strong>대한볼링협회 2025년 정규직 일반(체육행정)채용공고</strong>
+                                                <span>대한볼링협회</span>
+                                            </div>
+                                            <span>2025.03.02</span>
+                                        </a>
+                                    </li>
+                                    <li class="emp__item">
+                                        <a href="#" class="emp__link">
+                                            <div class="emp__txt">
+                                                <strong>2025년 제1차 제천시체육회 사무직 경력직 직원 채용공고</strong>
+                                                <span>제천시체육회</span>
+                                            </div>
+                                            <span>2025.03.02</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- // 스포츠 데이터랩, 채용정보 -->
+
+            <!-- 아카이브 -->
+            <article class="arc">
+                <div class="arc__bg">
+                    <div></div>
+                </div>
+                <div class="inner">
+                    <h2 class="arc__head">
+                        <span>생애주기별 서비스 및 스포츠 관련 다양한 정보를 제공합니다.</span>
+                        <strong>아카이브</strong>
+                    </h2>
+                    <form method="" action="" id="" name="">
+                        <fieldset>
+                            <legend>검색 폼</legend>
+                            <div class="arc__search">
+                                <div class="arc__search-box">
+                                    <input type="text" class="arc__search-input" title="찾으시는 서비스를 입력하세요." placeholder="찾으시는 서비스를 입력하세요.">
+                                    <div class="arc__search-btx">
+                                        <button type="button" class="arc__search-icon">
+                                            <img src="images/icons/search-white-icon.png" alt="검색하기">
+                                        </button>
+                                        <button type="button" class="arc__search-icon">
+                                            <img src="images/icons/filter-icon.png" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="arc__search-drop">
+                                        <button type="button">분야별</button>
+                                        <button type="button">유형별</button>
+                                        <button type="button">형태별</button>
+                                    </div>
+                                </div>
+                                <div class="arc__rcmn">
+                                    <span class="arc__rcmn-name">추천 검색어</span>
+                                    <div class="arc__rcmn-tag">
+                                        <button type="button">#타임라인</button>
+                                        <button type="button">#기증열람</button>
+                                        <button type="button">#스포츠영웅</button>
+                                        <button type="button">#종목별</button>
+                                        <button type="button">#명예의전당</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div class="arc__grid">
+                        <div class="arc__card">
+                            <h4 class="arc__tit">역사 아카이브</h4>
+                            <ul class="arc__list">
+                                <li class="arc__item">
+                                    <a href="#" class="arc__link">대한체육회 역사</a>
+                                </li>
+                                <li class="arc__item">
+                                    <a href="#" class="arc__link">한국 체육사</a>
+                                </li>
+                                <li class="arc__item">
+                                    <a href="#" class="arc__link">한국체육 타임라인</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="arc__card">
+                            <h4 class="arc__tit">인물 아카이브</h4>
+                            <ul class="arc__list">
+                                <li class="arc__item">
+                                    <a href="#" class="arc__link">스포츠 영웅</a>
+                                </li>
+                                <li class="arc__item">
+                                    <a href="#" class="arc__link">종목별 레전드</a>
+                                </li>
+                                <li class="arc__item">
+                                    <a href="#" class="arc__link">체육 기여자</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="arc__card">
+                            <h4 class="arc__tit">대회 아카이브</h4>
+                            <ul class="arc__list">
+                                <li class="arc__item">
+                                    <a href="#" class="arc__link">전국 체육대회</a>
+                                </li>
+                                <li class="arc__item">
+                                    <a href="#" class="arc__link">국제 대회</a>
+                                </li>
+                                <li class="arc__item">
+                                    <a href="#" class="arc__link">종목별 대회</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="arc__card">
+                            <h4 class="arc__tit">미디어 아카이브</h4>
+                            <ul class="arc__list">
+                                <li class="arc__item">
+                                    <a href="#" class="arc__link">사진 아카이브</a>
+                                </li>
+                                <li class="arc__item">
+                                    <a href="#" class="arc__link">영상 아카이브</a>
+                                </li>
+                                <li class="arc__item">
+                                    <a href="#" class="arc__link">음성 아카이브</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="arc__card">
+                            <h4 class="arc__tit">기록물 관리</h4>
+                            <ul class="arc__list">
+                                <li class="arc__item">
+                                    <a href="#" class="arc__link">행정문서</a>
+                                </li>
+                                <li class="arc__item">
+                                    <a href="#" class="arc__link">간행물</a>
+                                </li>
+                                <li class="arc__item">
+                                    <a href="#" class="arc__link">디지털 자료</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="arc__card">
+                            <h4 class="arc__tit">스포츠 기증관</h4>
+                            <ul class="arc__list">
+                                <li class="arc__item">
+                                    <a href="#" class="arc__link">기증 안내</a>
+                                </li>
+                                <li class="arc__item">
+                                    <a href="#" class="arc__link">기증자료 열람</a>
+                                </li>
+                                <li class="arc__item">
+                                    <a href="#" class="arc__link">기증자 명예의 전당</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- // 아카이브 -->
         </section>
         <!-- // contents -->
 

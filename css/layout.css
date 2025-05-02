@@ -53,6 +53,7 @@ img {
     max-width: 110rem;
     padding: 0 2rem;
     margin: 0 auto;
+    position: relative;
 }
 
 .input-box {
@@ -292,6 +293,7 @@ img {
     border: var(--border-normal);
     border-right: 0;
     background-color: var(--color-white);
+    transition: all 0.3s;
 }
 
 .tab2__btn:first-child {
@@ -303,6 +305,14 @@ img {
     border-top-right-radius: var(--border-radius-normal);
     border-bottom-right-radius: var(--border-radius-normal);
     border-right: var(--border-normal);
+}
+
+.tab2__btn:hover {
+    background: var(--color-bg-blue99);
+}
+
+.tab2__btn--green:hover {
+    background: var(--color-bg-green99);
 }
 
 .tab2__btn.active {
@@ -338,6 +348,11 @@ img {
     border-radius: var(--border-radius-xs);
     background-color: var(--color-white);
     position: relative;
+    transition: all 0.3s;
+}
+
+.reload:hover {
+    background-color: var(--color-bg-alternative);
 }
 
 .reload--pd9 {
