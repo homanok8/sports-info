@@ -221,5 +221,67 @@ $(function() {
         }
     });
 
+    // 종목선택 ?버튼 토글
+    $('.chc__qst-btn').click(function(e) {
+        e.stopPropagation();
+        $(this).next().toggle();
+    });
+    $(document).click(function(e) {
+        if (!$(e.target).closest('.chc__qst-view, .chc__qst-btn').length) {
+            $('.chc__qst-view').hide();
+          }
+    });
+
+    // 증명서 발급안내 탭 
+    $('.tab3__btn').click(function() {
+        let elIndex = $(this).index();
+
+        $('.tab3__btn').removeClass('active');
+        $(this).addClass('active');
+        $('article').removeClass('active');
+        if (elIndex === 0) {
+            $('.chc').addClass('active');
+        } else {
+            $('.prcd').addClass('active');
+        }
+
+        $(window).scrollTop(0);
+    });
+
+    $('.prcd__btn').click(function() {
+        let dataNum = parseInt($(this).attr('data-number'));
+        $('article').removeClass('active');
+        $('.mns').addClass('active');
+        $('.mns__tab button').removeClass('active');
+        $('.mns__block').removeClass('active');
+        $('.mns__tab button').eq(dataNum - 1).addClass('active');
+        $('.mns__block').eq(dataNum - 1).addClass('active');
+
+        $(window).scrollTop(0);
+    });
+
+    $('.mns__tab button').click(function() {
+        let elIndex = $(this).index();
+
+        $('.mns__tab button').removeClass('active');
+        $(this).addClass('active');
+        $('.mns__block').removeClass('active');
+        $('.mns__block').eq(elIndex).addClass('active');
+
+        $(window).scrollTop(0);
+    });
+
+    // 이미지형, 리스트형
+    $('.chcList').click(function() {
+        $('.chc__btn').removeClass('active');
+        $('.chcList').addClass('active');
+        $('.chc__list').removeClass('chc__list--img');
+    });
+
+    $('.chcImage').click(function() {
+        $('.chc__btn').removeClass('active');
+        $('.chcImage').addClass('active');
+        $('.chc__list').addClass('chc__list--img');
+    });
 
 });
