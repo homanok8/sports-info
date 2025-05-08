@@ -72,11 +72,90 @@
     justify-content: center;
     padding: 2rem;
     border: 1px solid #ddd;
+    border-radius: 1rem;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.38;
     text-align: center;
     margin-bottom: 3.2rem;
+}
+
+.chc__grid {
+    display: grid;
+    grid-template-columns: 1fr 39.5rem;
+    gap: 2rem;
+}
+
+.chc__lf {
+    position: relative;
+}
+
+.chc__span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    background: #FF0505;
+    color: #fff;
+}
+
+.chc__span--1 {
+    position: absolute;
+    top: 9%;
+    left: 11%;
+}
+
+.chc__span--2 {
+    position: absolute;
+    top: 9%;
+    left: 48%;
+}
+
+.chc__span--3 {
+    position: absolute;
+    top: 33%;
+    left: 48%;
+}
+
+.chc__span--4 {
+    position: absolute;
+    top: 52%;
+    left: 46%;
+}
+
+.chc__rt ul {
+    padding: 2.6rem 2rem 4.3rem;
+    border-radius: 1rem;
+    background: #FFF4E0;
+}
+
+.chc__rt ul li {
+    display: flex;
+    gap: 1.4rem;
+}
+
+.chc__rt ul li + li {
+    margin-top: 2rem;
+}
+
+.chc__rt ul li dl {
+    flex: 1;
+}
+
+.chc__rt ul li dl dt {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.38;
+}
+
+.chc__rt ul li dl dd {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.38;
+    color: #666666;
 }
 
 .chc__tit {
@@ -197,6 +276,11 @@
 }
 
 .initial__btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+.initial__btn.active {
     background: #000;
     color: #fff;
 }
