@@ -285,3 +285,44 @@ $(function() {
     });
 
 });
+
+// datepicker
+$.datepicker.setDefaults({
+    dateFormat: "yy-mm-dd",
+    dayNames: ["S", "M", "T", "W", "T", "F", "S"],
+    dayNamesMin: ["S", "M", "T", "W", "T", "F", "S"],
+    monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+    monthNamesShort: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+    prevText: "이전",
+    nextText: "다음",
+    currentText: "오늘",
+    closeText: "닫기",
+    changeMonth: true,
+    changeYear: true,
+    showOn: "both",
+    buttonImage: 'images/icons/calendar-gray-icon.png',
+    buttonImageOnly: true,
+    beforeShow: function(input, inst) {
+        setTimeout(() => {
+            const date = $(input).datepicker("getDate") || new Date();
+            updateCustomTitle(date.getFullYear(), date.getMonth() + 1);
+        }, 0);
+    },
+    onChangeMonthYear: function(year, month, inst) {
+        setTimeout(() => {
+            updateCustomTitle(year, month);
+        }, 0);
+    }
+});
+
+function updateCustomTitle(year, month) {
+    const monthNames = ['01','02','03','04','05','06','07','08','09','10','11','12'];
+    const customText = `${year}. ${monthNames[month - 1]}`;
+    $('.ui-datepicker-title .custom-title').remove(); // 중복 방지
+    $('.ui-datepicker-title').prepend(`<div class="custom-title">${customText}</div>`);
+}
+
+$(function() {
+    $('.datepicker').datepicker();
+});
+
