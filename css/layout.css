@@ -30,6 +30,11 @@ button:disabled {
     cursor: unset;
 }
 
+input:focus {
+    outline: none;
+    border-color: var(--color-primary-normal);
+}
+
 img {
     width: 100%;
 }
