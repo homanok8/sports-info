@@ -1,0 +1,1266 @@
+.ply-hdr {
+    width: 100%;
+    height: 6.8rem;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.ply-hdr .inner {
+    max-width: 148rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ply-hdr__lf {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.ply-hdr__logo {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.ply-hdr__logo img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+}
+
+.ply-hdr__lf .custom-select-trigger {
+    min-width: 16rem;
+    background: url(../../images/icons/select-white-icon.png) no-repeat calc(100% - 20px) 50% / 16px auto;
+    background-color: #0C54B8;
+    color: #fff;
+}
+
+.ply-hdr__lf .custom-option {
+    font-size: 1.4rem;
+    padding: 0.8rem 1rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.ply-hdr__lf .custom-option:hover {
+    background: #0C54B8;
+}
+
+.ply-hdr__rt {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.ply-hdr__list {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.ply-hdr__list li {
+    position: relative;
+}
+
+.ply-hdr__list li + li::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 9px;
+    background: #999;
+    position: absolute;
+    top: 50%;
+    left: -16px;
+    transform: translateY(-50%);
+}
+
+.ply-hdr__list a {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.ply-hdr__help {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.4rem 1rem;
+    background: #333;
+    border-radius: 2rem;
+}
+
+.ply-hdr__help a {
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #fff;
+    position: relative;
+}
+
+.ply-hdr__help a b {
+    font-weight: 600;
+}
+
+.ply-hdr__help a + a::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 9px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: -8px;
+    transform: translateY(-50%);
+}
+
+.ply-nav {
+    width: 100%;
+    height: 6rem;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    position: fixed;
+    top: 6.8rem;
+    left: 0;
+    z-index: 8;
+}
+
+.ply-nav .inner {
+    max-width: 148rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ply-nav__list {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.ply-nav__link {
+    font-weight: 600;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+}
+
+.ply-nav__link.active {
+    color: #0C54B8;
+}
+
+.ply-nav__link:hover {
+    color: #0C54B8;
+}
+
+.ply-nav__rt {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+}
+
+.ply-nav__quik {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.ply-nav__quik li {
+    position: relative;
+}
+
+.ply-nav__quik li + li::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 8px;
+    background: #999;
+    position: absolute;
+    top: 50%;
+    left: -16px;
+    transform: translateY(-50%);
+}
+
+.ply-nav__quik li a {
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #666;
+}
+
+.ply-nav__logout {
+    height: 3rem;
+    display: inlien-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 1rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1;
+    border: 1px solid #999;
+    border-radius: 2rem;
+    background: #fff;
+}
+
+.ply {
+    padding-top: 9rem;
+    padding-bottom: 10rem;
+}
+
+.ply .inner {
+    max-width: 148rem;
+}
+
+.ply__tit {
+    padding: 0 2rem;
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.ply__desc {
+    padding: 0 2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.ply__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.2rem;
+}
+
+.ply__grid--mt20 {
+    margin-top: 2rem;
+}
+
+.ply__bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3rem;
+    border: 1px solid #ddd;
+}
+
+.ply__block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2.5rem;
+    border-radius: 3rem;
+    background: #0C54B8;
+    margin-bottom: 2rem;
+}
+
+.ply__sbj {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ply__sbj span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    height: 4.5rem;
+    border-radius: 3rem;
+    background: #fff;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #0C54B8;
+    white-space: nowrap;
+}
+
+.ply__sbj figure {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.ply__sbj figure img {
+    width: 2.4rem;
+    height: 2.4rem;
+    object-fit: contain;
+}
+
+.ply__name {
+    padding: 0 1rem 2rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: rgba(255,255,255,0.8);
+    margin-top: 0.5rem;
+    border-bottom: 1px dashed #fff;
+}
+
+.ply__name dt {
+    padding: 0.5rem 0;
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: #fff;
+}
+
+.ply__hst {
+    padding: 2.5rem 1rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.ply__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.ply__info-txt {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.7rem;
+}
+
+.ply__tell-link {
+    align-self: flex-start;
+    height: 4rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    border: 1px solid #999;
+    border-radius: 3rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #333;
+    padding: 1rem 2.4rem;
+    transition: all 0.3s;
+}
+
+.ply__tell-link:hover {
+    border-color: #333;
+}
+
+.ply__tell-link img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+}
+
+.ply__side {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.ply__print {
+    display: flex;
+    gap: 2rem;
+}
+
+.ply__print li {
+    width: 100%;
+}
+
+.ply__print a {
+    width: 100%;
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: #003189;
+    border-radius: 3rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.ply__print a:hover {
+    opacity: 0.8;
+}
+
+.ply__print a img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+}
+
+.ply__print a.navy {
+    background: #00245B;
+}
+
+.ply__print a.change {
+    background: #133E92;
+}
+
+.ply__tell {
+    height: 17.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    border-radius: 3rem;
+    background: #f5f5f5;
+}
+
+.ply__tell figure {
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.ply__tell figure img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+}
+
+.ply__tell dl {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #333;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.ply__tell dl dt {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.ply__link {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 3rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #333;
+    transition: all 0.3s;
+}
+
+.ply__link:hover {
+    border-color: #666;
+}
+
+.ply__link img {
+    width: 2.4rem;
+    height: 2.4rem;
+    object-fit: contain;
+}
+
+.ply-ftr {
+    border-top: 1px solid #ddd;
+    background: #fff;
+    padding-top: 3rem;
+    padding-bottom: 3.8rem;
+}
+
+.ply-ftr .inner {
+    max-width: 148rem;
+}
+
+.ply-ftr__tit {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.ply-ftr__adr {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.ply-ftr__adr dl {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    color: #666;
+    font-size: 1.5rem;
+}
+
+.ply-ftr__adr dl dt {
+    font-weight: 500;
+    padding-right: 0.5rem;
+}
+
+.ply-ftr__adr dl dd + dd {
+    padding-left: 2rem;
+    position: relative;
+}
+
+.ply-ftr__adr dl dd + dd::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 9px;
+    background: #999;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.ply-ftr__link {
+    font-weight: 500;
+    font-size: 15px;
+    color: #0C54B8;
+}
+
+.ply-smr {
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 3rem;
+    padding: 7rem 9rem 10rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #333;
+    position: relative;
+}
+
+.ply-smr__bg {
+    width: 34rem;
+    position: absolute;
+    bottom: 10.5rem;
+    right: 9rem;
+}
+
+.ply-smr dl {
+    position: relative;
+}
+
+.ply-smr dl dt {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+}
+
+.ply-smr dl + dl {
+    margin-top: 5.6rem;
+}
+
+.ply-smr__list {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 5rem;
+}
+
+.ply-smr__list a {
+    height: 5.6rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem 3rem;
+    border: 1px solid #999;
+    border-radius: 3rem;
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: #333;
+    transition: all 0.3s;
+}
+
+.ply-smr__list a:hover {
+    border-color: #333;
+}
+
+.ply-smr__list a img {
+    width: 1.6rem;
+}
+
+.ply-pop {
+    min-width: 50rem;
+    padding: 4rem;
+    border-radius: 3rem;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.ply-pop__tit {
+    font-weight: 600;
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.ply-pop .popup__close {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 2.5px solid #666;
+    top: 4rem;
+    right: 4rem;
+}
+
+.ply-pop .popup__close::before {
+    width: 50%;
+    height: 2px;
+    border-radius: 2px;
+    background: #666;
+}
+
+.ply-pop .popup__close::after {
+    width: 50%;
+    height: 2px;
+    border-radius: 2px;
+    background: #666;
+}
+
+.ply-pop__scroll {
+    width: 67rem;
+    height: 60vh;
+    max-height: 54.5rem;
+    padding: 3rem 2rem;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.ply-pop__scroll h4 {
+    font-weight: 600;
+}
+
+.ply-pop__scroll .mb20 {
+    margin-bottom: 2rem;
+}
+
+.ply-pop__scroll .mb30 {
+    margin-bottom: 3rem;
+}
+
+.ply-pop__scroll .mb50 {
+    margin-bottom: 5rem;
+}
+
+.ply-pop__btbx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    margin-top: 3.6rem;
+}
+
+.ply-pop__btn {
+    min-width: 10rem;
+    height: 4.6rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    background: #0C54B8;
+    border: 0;
+    border-radius: 3rem;
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.ply-pop__btn--gray {
+    background: #666666;
+}
+
+.ply-pop__desc {
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.ply-pop__top {
+    padding: 1rem 0;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.ply-pop__box {
+    border: 1px solid #ddd;
+    padding: 2.3rem 3rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.ply-pop__txt {
+    padding: 1rem 0;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.ply-pop__link {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #0C54B8;
+}
+
+.ply-bsc {
+    display: grid;
+    grid-template-columns: 1fr 34.5rem;
+    gap: 2rem;
+}
+
+.step {
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.step__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3.8rem;
+}
+
+.step__item {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 4rem;
+    background: #fff;
+    position: relative;
+}
+
+.step__item.active {
+    border: 0;
+    background: #333;
+}
+
+.step__item > div {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.step__item > div em {
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #666;
+}
+
+.step__item.active > div em {
+    color: #999;
+}
+
+.step__item > div span {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.step__item.active > div span {
+    color: #fff;
+}
+
+.step__item svg {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 9px);
+    transform: translateY(-50%);
+}
+
+.step__item.active svg path {
+    fill: #333;
+}
+
+.ply-bsc__block {
+    padding: 3rem 0;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.ply-bsc__table {
+    width: 100%;
+}
+
+.ply-bsc__table th {
+    width: 15rem;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.ply-bsc__table td {
+    padding: 1rem 0;
+    font-weight: 500;
+    font-size: 15px;
+    color: #666;
+}
+
+.ply-bsc__btbx {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-top: 1rem;
+}
+
+.ply-bsc__btn {
+    height: 4rem;
+    border: 1px solid #999;
+    border-radius: 3rem;
+    padding: 1rem 2rem;
+    background: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.ply-bsc__bm {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 3px;
+    margin-top: 3rem;
+}
+
+.ply__btn {
+    height: 4.2rem;
+    border: 1px solid #333;
+    border-radius: 3rem;
+    padding: 1rem 2rem;
+    background: #fff;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: #333;
+}
+
+.ply__btn--prev {
+    color: #666;
+    border-color: #999;
+}
+
+.pstn {
+    position:-webkit-sticky;
+    position: sticky;
+    top: 12.8rem;
+}
+
+.pstn__block {
+    border-radius: 2rem;
+    background: #F5F5F5;
+}
+
+.pstn__tit {
+    padding: 3rem 3rem 0;
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: #333;
+}
+
+.pstn__list {
+    padding: 0 3rem;
+    position: relative;
+    margin-bottom: 4.6rem;
+}
+
+.pstn__list::before {
+    content: '';
+    width: 1px;
+    height: 10rem;
+    background: #d9d9d9;
+    position: absolute;
+    top: 15px;
+    left: 34px;
+}
+
+.pstn__list li {
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+    padding: 0.5rem 0;
+    font-weight: 500;
+    font-size: 1.5rem;
+
+}
+
+.pstn__list li::before {
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    position: relative;
+}
+
+.pstn__list li.active {
+    font-weight: 600;
+    color: #0C54B8;
+}
+
+.pstn__list li.active::before {
+    background: #0C54B8;
+}
+
+.pstn__btbx {
+    display: flex;
+}
+
+.pstn__btn {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #666;
+    border: 0;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.pstn__btn--blue {
+    background: #0C54B8;
+}
+
+.pstn__col {
+    padding: 3rem;
+    padding-left: 5.6rem;
+}
+
+.pstn__tell {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.pstn__tell figure {
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.pstn__tell figure img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+}
+
+.pstn__tell dl {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #333;
+}
+
+.pstn__tell dl dt {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.pstn__tell + .pstn__tell {
+    margin-top: 4rem;
+}
+
+.pstn__bm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4.5rem;
+}
+
+.pstn__top-btn {
+    width: 6.5rem;
+    height: 6.5rem;
+    border: 1px solid #999;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #333;
+    border-radius: 50%;
+}
+
+.ply-reg__up {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 2rem 3rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.ply-reg__up figure {
+    width: 13rem;
+    height: 15.5rem;
+    border-radius: 2rem;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+.ply-reg__up figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ply-reg__rt {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.ply-reg__rt strong {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.ply-reg__fileinput {
+    display: none;
+}
+
+.ply-reg__upload {
+    height: 2.8rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 2rem;
+    font-size: 1.3rem;
+    color: #666;
+    border: 1px solid #999;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-top: 0.7rem;
+}
+
+.ply-reg__list {
+    padding-top: 2rem;
+    padding-right: 6.5rem;
+    padding-bottom: 4rem;
+}
+
+.ply-reg__item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    margin-bottom: 1rem;
+}
+
+.ply-reg__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.ply-reg__label {
+    padding: 1rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.ply-reg__input {
+    width: 100%;
+    height: 5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    background: #fff;
+    padding: 1.45rem 2rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.ply-reg__input--max120 {
+    max-width: 12rem;
+}
+
+.ply-reg__input--max150 {
+    max-width: 15rem;
+}
+
+.ply-reg__input--max660 {
+    max-width: 66rem;
+}
+
+.ply-reg__input:read-only {
+    background: #F5F5F5;
+    color: #999;
+}
+
+.ply-reg__input:disabled {
+    background: #F5F5F5;
+    color: #999;
+}
+
+.ply-reg__input::placeholder {
+    font-weight: 400;
+    color: #666;
+}
+
+.ply-reg__flex {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.ply-reg__flex--gap3 {
+    gap: 3px;
+}
+
+.ply-reg__flex--gap10 {
+    gap: 1rem;
+}
+
+.ply-reg__flex .ml7 {
+    margin-left: 7px;
+}
+
+.ply-reg__flex .mr17 {
+    margin-right: 17px;
+}
+
+.ply-reg__card .custom-select-trigger {
+    width: 100%;
+    max-width: unset;
+    height: 5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #666;
+    background: url(../../images/icons/select-icon.png) no-repeat calc(100% - 20px) 50% / 15px auto;
+}
+
+.ply-reg__card .custom-options {
+    border-radius: 0.5rem;
+    z-index: 3;
+}
+
+.ply-reg__card .custom-option {
+    height: 5rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1.45rem 2rem;
+    background: #fff;
+}
+
+.ply-reg__card .custom-option + .custom-option {
+    border-top: 1px solid #ddd;
+}
+
+.ply-reg__card .custom-option:hover {
+    background: #0C54B8;
+    color: #fff;
+}
+
+.ply-reg__btwn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ply-reg__agree {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 400;
+    color: #666;
+}
+
+.ply-reg__radio {
+    appearance: none;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    background: #fff;
+    margin: 0;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.ply-reg__radio::before {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 4px;
+    border: 3px solid #fff;
+    border-top: 0;
+    border-right: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-35%) rotate(-45deg);
+    transform-origin: 25% 25%;
+}
+
+.ply-reg__radio:checked {
+    border: 0;
+    background: #0C54B8;
+}
+
+.ply-reg__item2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 1rem;
+}
+
+.ply-reg__item2 .ply-reg__label {
+    padding-bottom: 0.5rem;
+}
+
+.ply-reg__adr {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ply-reg__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 15rem;
+    height: 5rem;
+    padding: 1.4rem;
+    border: 1px solid #999;
+    border-radius: 0.5rem;
+    background: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #333;
+}

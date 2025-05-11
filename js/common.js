@@ -221,17 +221,6 @@ $(function() {
         }
     });
 
-    // 종목선택 ?버튼 토글
-    $('.chc__qst-btn').click(function(e) {
-        e.stopPropagation();
-        $(this).next().toggle();
-    });
-    $(document).click(function(e) {
-        if (!$(e.target).closest('.chc__qst-view, .chc__qst-btn').length) {
-            $('.chc__qst-view').hide();
-          }
-    });
-
     // 증명서 발급안내 탭 
     $('.tab3__btn').click(function() {
         let elIndex = $(this).index();
@@ -284,6 +273,58 @@ $(function() {
         $('.chc__list').addClass('chc__list--img');
     });
 
+    // 종목선택 팝업 
+    $('.chc__link').click(function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        const offset = $(this).offset();
+        const top = offset.top - 50;
+        const left = offset.left + 90;
+        const right = offset.left - $('.game__pop').outerWidth() + 50;
+        const currentNum = $(this).parent().index() + 1;
+        const x = currentNum % 6;
+        const y = currentNum % 4;
+        const text = $(this).find('span').text();
+
+        $('.game__pop').addClass('on');
+        $('.game__tit span b').text(text);
+
+        if ($(this).parents('ul').hasClass('chc__list--img')) { // 이미지형 리스트일 경우
+            if (x === 1 || x === 2 || x === 3) {
+                $('.game__pop').css({
+                    top: top,
+                    left: left,
+                });
+            } else {
+                $('.game__pop').css({
+                    top: top,
+                    left: right
+                });
+            }
+        } else {
+            if (y === 1 || y === 2) {
+                $('.game__pop').css({
+                    top: top,
+                    left: left,
+                });
+            } else {
+                $('.game__pop').css({
+                    top: top,
+                    left: right,
+                });
+            }
+        }
+        
+
+    });
+
+    $(document).click(function(e) {
+        if (!$(e.target).closest('.game__pop, .chc__link').length) {
+            $('.game__pop').removeClass('on');
+        }
+    });
+
+
 });
 
 // datepicker
@@ -326,3 +367,53 @@ $(function() {
     $('.datepicker').datepicker();
 });
 
+// selectbox 커스텀
+$(document).ready(function () {
+    $('.selectbox').each(function () {
+        const $select = $(this);
+        const options = $select.find('option');
+        const selectedText = options.filter(':selected').text() || options.eq(0).text();
+        const $wrapper = $('<div class="custom-select-wrapper"></div>');
+        const $customSelect = $(`
+            <div class="custom-select">
+                <div class="custom-select-trigger">${selectedText}</div>
+                <div class="custom-options"></div>
+            </div>
+        `);
+
+        // 옵션 넣기
+        options.each(function () {
+            const value = $(this).val();
+            const text = $(this).text();
+            const $option = $(`<span class="custom-option" data-value="${value}">${text}</span>`);
+            $customSelect.find('.custom-options').append($option);
+        });
+
+        // select 숨기고 커스텀 셀렉트 추가
+        $select.hide().after($wrapper);
+        $wrapper.append($customSelect);
+
+        // 트리거 클릭 시 열기/닫기
+        $customSelect.find('.custom-select-trigger').on('click', function () {
+            $customSelect.toggleClass('open');
+        });
+
+        // 옵션 선택
+        $customSelect.find('.custom-option').on('click', function () {
+            const value = $(this).data('value');
+            const text = $(this).text();
+
+            $customSelect.find('.custom-select-trigger').text(text);
+            $select.val(value).trigger('change');
+            $customSelect.removeClass('open');
+        });
+    });
+
+    // 외부 클릭 시 드롭다운 닫기
+    $(document).on('click', function (e) {
+        if (!$(e.target).closest('.custom-select').length) {
+            $('.custom-select').removeClass('open');
+        }
+    });
+
+});
