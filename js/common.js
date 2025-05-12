@@ -417,3 +417,16 @@ $(document).ready(function () {
     });
 
 });
+
+
+$(function() {
+    // 추가정보 입력 탭
+    $('.adtn__tab button').click(function() {
+        let currentIndex = $(this).index();
+        console.log(currentIndex);
+        $('.adtn__tab button').removeClass('active');
+        $(this).addClass('active');
+        $('.adtn__section').removeClass('active');
+        $('.adtn__container .adtn__section').eq(currentIndex).addClass('active');
+    });
+});
