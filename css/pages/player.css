@@ -224,6 +224,14 @@
     margin-bottom: 1rem;
 }
 
+.ply__tit--pd0 {
+    padding: 0;
+}
+
+.ply__tit--mb30 {
+    margin-bottom: 3rem;
+}
+
 .ply__desc {
     padding: 0 2rem;
     font-weight: 500;
@@ -1017,6 +1025,10 @@
     position: relative;
 }
 
+.ply-bsc__bm--pr20 {
+    padding-right: 2rem;
+}
+
 .ply__btn {
     height: 4.2rem;
     border: 1px solid #333;
@@ -1031,6 +1043,10 @@
 
 .ply__btn--prev {
     color: #666;
+    border-color: #999;
+}
+
+.ply__btn--blk {
     border-color: #999;
 }
 
@@ -1054,6 +1070,10 @@
     color: #fff;
     background: #666666;
     border: 0;
+}
+
+.ply__btn.min100 {
+    min-width: 10rem;
 }
 
 .pstn {
@@ -1336,6 +1356,10 @@
     max-width: 28rem;
 }
 
+.ply-reg__input--max310 {
+    max-width: 31rem;
+}
+
 .ply-reg__input--max660 {
     max-width: 66rem;
 }
@@ -1353,6 +1377,10 @@
 .ply-reg__input::placeholder {
     font-weight: 400;
     color: #666;
+}
+
+.ply-reg__input--right {
+    text-align: right;
 }
 
 .ply-reg__flex {
@@ -1514,6 +1542,14 @@
 .ply-reg__item4 {
     display: grid;
     grid-template-columns: 28rem 1fr;
+    gap: 4rem;
+    margin-bottom: 1rem;
+}
+
+.ply-reg__item5 {
+    max-width: 78rem;
+    display: grid;
+    grid-template-columns: 28rem 1fr 1fr;
     gap: 4rem;
     margin-bottom: 1rem;
 }
@@ -1928,4 +1964,307 @@
 
 .aprv__link img {
     width: 1.5rem;
+}
+
+.pym__dl {
+    min-height: 12.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.2rem;
+    border: 1px solid #ddd;
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin-top: 2rem;
+}
+
+.pym__dl dd {
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 3.2rem;
+}
+
+.pym__tit {
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: #333;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.pym__desc {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.pym__desc b {
+    font-weight: 600;
+}
+
+.pym__block {
+    padding: 3rem 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.pym__inner {
+    width: 100%;
+    max-width: 105rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+.pym__list {
+    padding-bottom: 3rem;
+}
+
+.pym__item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+
+.pym__item .ply-reg__card {
+    position: relative;
+}
+
+.pym__unt {
+    display: block;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #666;
+    position: absolute;
+    top: 0.9rem;
+    right: 0.8rem;
+}
+
+.pym__bm {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.pym__bm-inner {
+    width: 100%;
+    max-width: 105rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.pym__ps {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.pym__ps img {
+    width: 2.4rem;
+}
+
+.pym__rt {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 3px;
+}
+
+.pym-info {
+    padding: 3rem 2rem;
+    border-top: 1px solid #333;
+}
+
+.pym-info__dl {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 2.2rem;
+}
+
+.pym-info__dl dt {
+    padding: 1rem 2rem;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.pym-info__dl dd {
+    padding: 0 2rem;
+}
+
+.pym-info__block {
+    padding: 2.7rem;
+    background: #F9F9F9;
+    border-radius: 3rem;
+}
+
+.pym-info__block + .pym-info__block {
+    margin-top: 1rem;
+}
+
+.pym-info__block h4 {
+    font-weight: 600;   
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    padding: 0 2rem;
+}
+
+.pym-info__list li {
+    display: flex;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.pym-info__list li em {
+    display: inline-block;
+    min-width: 9.2rem;
+    padding: 1rem 2rem;
+}
+
+.pym-info__list li span {
+    padding: 1rem 2rem;
+}
+
+.pym-info__option {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.55rem 2rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.pym-info__option .checkbox {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #000;
+    background: transparent;
+}
+
+.pym-info__option .checkbox::before {
+    border-color: #000;
+    border-width: 2px;
+}
+
+.pym-info__option .checkbox:checked {
+    border: 2px solid #0C54B8;
+}
+
+.pym-info__option .checkbox:checked::before {
+    border-color: #0C54B8;
+}
+
+.pstn__print {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #666;
+    padding: 5.2rem 4.4rem 0;
+    letter-spacing: -0.5px;
+}
+
+.pstn__print--pd24 {
+    padding: 5.2rem 2.4rem 3rem;
+}
+
+.mmb {
+    padding: 3rem 0;
+    border-top: 1px solid #333;
+}
+
+.mmb__tit {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #333;
+    padding: 1rem 2rem;
+    margin-bottom: 1.2rem;
+}
+
+.mmb__lsit {
+    min-height: 19rem;
+    border: 1px solid #ddd;
+    border-radius: 3rem;
+    padding: 1.8rem 3rem;
+}
+
+.mmb__item {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.mmb__item dl {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.mmb__item dl + dl::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 1rem;
+    background: #999;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.mmb__item dl dt {
+    padding: 1rem 2rem;
+    font-weight: 600;
+}
+
+.mmb__item dl dd {
+    padding: 1rem 2rem;
+}
+
+.mmb__block {
+    border-top: 1px solid #ddd;
+    padding: 1rem 2rem 6rem;
+}
+
+.mmb__dl {
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.mmb__dl dt {
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.mmb__dl dd {
+    display: flex;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+.mmb__dl dd::before {
+    content: '•';
+}
+
+.mmb__empty {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #333;
+    padding-top: 6rem;
 }
