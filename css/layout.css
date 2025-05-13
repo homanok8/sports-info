@@ -812,6 +812,7 @@ img {
 .footer {
     padding: 4rem;
     background-color: var(--color-white);
+    border-top: 1px solid #ddd;
 }
 
 .footer__top {

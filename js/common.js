@@ -429,4 +429,32 @@ $(function() {
         $('.adtn__section').removeClass('active');
         $('.adtn__container .adtn__section').eq(currentIndex).addClass('active');
     });
+
+    // 선수촌견학 사진갤러리 슬라이드
+    const $galleryItems = $('.dtl__slide-list li');
+    const totalgallery = $galleryItems.length;
+    let galleryPage = 0;
+
+    $('.dtl__total-cnt').text(totalgallery);
+
+    $('#galleryNext').click(function() {
+        if (galleryPage < totalgallery - 1) {
+            $galleryItems.eq(galleryPage).stop().animate({'left': '-100%'});
+            galleryPage++;
+            $galleryItems.eq(galleryPage).stop().css({'left': '100%'});
+            $galleryItems.eq(galleryPage).stop().animate({'left': '0'});
+            $('.dtl__status').text(galleryPage+1);
+        }
+        
+    });
+
+    $('#galleryPrev').click(function() {
+        if (galleryPage > 0) {
+            $galleryItems.eq(galleryPage).stop().animate({'left': '100%'});
+            galleryPage--;
+            $galleryItems.eq(galleryPage).stop().css({'left': '-100%'});
+            $galleryItems.eq(galleryPage).stop().animate({'left': '0'});
+            $('.dtl__status').text(galleryPage+1);
+        }
+    });
 });
