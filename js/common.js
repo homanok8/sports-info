@@ -458,3 +458,50 @@ $(function() {
         }
     });
 });
+
+// 전문체육팀 신청 종별/팀성별 체크박스
+$(function() {
+    // 연령대 체크박스 클릭 이벤트
+    $('input[name="ageGroup"]').on('change', function () {
+        const selected = $(this);
+        const isChecked = selected.is(':checked');
+        const selectedVal = selected.val(); // ex: "12under"
+
+        // 모든 성별 체크박스를 비활성화하고 체크 해제
+        $('input[name^="gender_"]').prop('disabled', true).prop('checked', false);
+
+        if (isChecked) {
+            // 다른 연령대는 체크 해제 및 비활성화
+            $('input[name="ageGroup"]').not(selected).prop('checked', false).prop('disabled', true);
+
+            // 해당 연령대에 연결된 성별 체크박스 활성화
+            $(`input[name="gender_${selectedVal}"]`).prop('disabled', false);
+        } else {
+            // 선택 해제 시 모든 연령대 다시 활성화
+            $('input[name="ageGroup"]').prop('disabled', false);
+
+            // 모든 성별 체크박스 다시 비활성화
+            $('input[name^="gender_"]').prop('disabled', true).prop('checked', false);
+        }
+    });
+});
+
+// 자주묻는 질문 토글
+$(document).ready(function() {
+    $('.qz__toggle').on('click', function(e) {
+        e.preventDefault();
+
+        const $toggle = $(this);
+        const $block = $toggle.next('.qz__block');
+        const $img = $toggle.find('img');
+
+        // 다른 항목 닫기 (선택적)
+        $('.qz__block').not($block).slideUp();
+        $('.qz__toggle').not($toggle).removeClass('active').find('img').removeClass('rotate-180');
+
+        // 현재 항목 토글
+        $block.slideToggle();
+        $toggle.toggleClass('active');
+        $img.toggleClass('rotate-180');
+    });
+});
