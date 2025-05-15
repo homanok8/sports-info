@@ -1585,7 +1585,7 @@
 .reg__table th {
     vertical-align: middle;
     text-align: left;
-    padding: 2.2rem;
+    padding: 1rem 2.2rem;
     font-weight: 600;
     font-size: 1.5rem;
     border-bottom: 1px solid #ddd;
@@ -1813,10 +1813,31 @@
     margin-top: 0.6rem;
 }
 
+.reg__desc2 {
+    border: 1px solid #ddd;
+    background: #F5F5F5;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.reg__desc2 li {
+    display: flex;
+    gap: 0.3rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.reg__desc2 li::before {
+    content: '·';
+}
+
 .reg__btbx {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 3px;
     margin-top: 5rem;
 }
 
@@ -1837,6 +1858,16 @@
     font-weight: 600;
     font-size: 1.7rem;
     color: #fff;
+}
+
+.reg__save--min113 {
+    min-width: 11.3rem;
+}
+
+.reg__save--white {
+    border: 1px solid #0C54B8;
+    background: #fff;
+    color: #0C54B8;
 }
 
 .reg__ps {
