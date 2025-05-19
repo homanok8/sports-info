@@ -286,6 +286,10 @@ img {
     margin-bottom: 0.4rem;
 }
 
+.input-label i {
+    color: #E64234;
+}
+
 .tab {
     display: flex;
     padding: 0.4rem;
