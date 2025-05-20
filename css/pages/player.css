@@ -55,6 +55,29 @@
     background: #0C54B8;
 }
 
+.ply-hdr__pop {
+    position: relative;
+}
+
+.ply-hdr__pop .game__pop {
+    top: calc(100% + 2.5rem);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ply-hdr__pop .game__pop::before {
+    content: '';
+    width: 0;
+    height: 2rem;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #333;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .ply-hdr__rt {
     display: flex;
     align-items: center;

@@ -291,16 +291,18 @@ $(function() {
                 });
             }
         }
-        
+    });
 
+    $('#popToggleBtn').click(function(e) {
+        e.stopPropagation();
+        $(this).next().toggleClass('on');
     });
 
     $(document).click(function(e) {
-        if (!$(e.target).closest('.game__pop, .chc__link').length) {
+        if (!$(e.target).closest('.game__pop, .chc__link, #popToggleBtn').length) {
             $('.game__pop').removeClass('on');
         }
     });
-
 
 });
 
