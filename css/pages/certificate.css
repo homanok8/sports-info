@@ -1131,18 +1131,70 @@
     padding-top: 0.8rem;
 }
 
+.appl__grid {
+    display: grid;
+    grid-template-columns: 1fr 37rem;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.appl__grid .appl__cntn + .appl__cntn {
+    margin-top: 0;
+}
+
 .appl__tit {
+    display: flex;
+    align-items: center;
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 1.38;
     margin-bottom: 1rem;
 }
 
+.appl__tit > span {
+    display: inline-block;
+    padding-left: 2rem;
+    font-size: 1.4rem;
+    position: relative;
+}
+
+.appl__tit > span::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 11px;
+    background: #999;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.appl__tit > a {
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #666;
+}
+
+.appl__tit--btw {
+    justify-content: space-between;
+}
+
+.appl__cntn.active .appl__tit {
+    color: #0C54B8;
+}
+
 .appl__block {
+    min-height: 8.2rem;
     padding: 2rem 4rem;
     background: #F5F5F5;
     border-radius: 1rem;
     border: 1px solid #ddd;
+}
+
+.appl__cntn.active .appl__block {
+    border-color: rgba(12, 84, 184, 0.5);
+    background: rgba(12, 84, 184, 0.05);
 }
 
 .appl__btwn {
@@ -1186,6 +1238,28 @@
 .appl__lf dl dd {
     font-weight: 600;
     font-size: 1.7rem;
+}
+
+.appl__way {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.appl__way li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5px 10px;
+}
+
+.appl__way li::before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #666;
 }
 
 .appl__rt {
@@ -1349,10 +1423,18 @@
 }
 
 .appl__list {
+    width: 100%;
+    max-width: 90rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.appl__list--nowrap {
+    max-width: unset;
+    flex-wrap: nowrap;
 }
 
 .appl__link {
@@ -1362,13 +1444,31 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 0.9rem;
+    padding: 0.9rem 2rem;
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 3rem;
     font-weight: 400;
     font-size: 1.5rem;
     white-space: nowrap;
+}
+
+.appl__link--blur {
+    background: #F5F5F5;
+    color: #999;
+    pointer-events: none;
+}
+
+.appl__input {
+    width: 100%;
+    height: 4rem;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 3rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #000;
+    text-align: center;
 }
 
 .appl-pop {
@@ -1523,6 +1623,31 @@
     border-left: 0;
 }
 
+.appl__table2 {
+    width: 100%;
+    border-top: 1px solid #333;
+}
+
+.appl__table2 th {
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 1.45rem;
+    text-align: center;
+    vertical-align: middle;
+    background: #F5F5F5;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+.appl__table2 td {
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 1.45rem;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+}
+
 .appl__crrc {
     min-width: 13rem;
     height: 3.5rem;
@@ -1591,6 +1716,7 @@
     font-weight: 600;
     font-size: 1.5rem;
     border-bottom: 1px solid #ddd;
+    background: #F5F5F5;
 }
 .reg__table th i {
     color: #E63636;
@@ -1601,6 +1727,28 @@
     font-size: 1.5rem;
     font-weight: 400;
     border-bottom: 1px solid #ddd;
+}
+
+.reg__table td > dl {
+    display: grid;
+    grid-template-columns: 9rem 1fr;
+    gap: 1rem;
+}
+
+.reg__table td > dl dt {
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 0.45rem 1.2rem;
+}
+
+.reg__table td > dl dd {
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 0.45rem 1.2rem;
+}
+
+.reg__table td.pd0 {
+    padding: 0;
 }
 
 .reg__team {
@@ -1674,6 +1822,24 @@
 .reg__input:focus {
     outline: none;
     border-color: var(--color-primary-normal);
+}
+
+.reg__input::placeholder {
+    font-weight: 400;
+}
+
+.reg__textarea {
+    width: 100%;
+    height: 26rem;
+    display: block;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 0.9rem 1.3rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.38;
+    color: #666;
 }
 
 .reg__btn {
@@ -1872,6 +2038,12 @@
     color: #0C54B8;
 }
 
+.reg__save--gray {
+    border: 1px solid #333333;
+    background: #fff;
+    color: #333;
+}
+
 .reg__ps {
     display: flex;
     flex-direction: column;
@@ -1989,6 +2161,78 @@
 
 .reg__item ul li dl dd {
     padding: 0 0.5rem;
+}
+
+.reg__check {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.reg__check .checkbox {
+    width: 2rem;
+    height: 2rem;
+}
+
+.reg__check .checkbox::before {
+    border-width: 2px;
+}
+
+.reg__check .checkbox:checked {
+    background: #fff;
+    border: 2px solid #0C54B8;
+}
+
+.reg__check .checkbox:checked::before {
+    border-color: #0C54B8;
+}
+
+.reg__prvn {
+    display: flex;
+}
+
+.reg__prvn figure {
+    width: 18rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.3rem 2.6rem;
+}
+
+.reg__prvn figure img {
+    width: 100%;
+    height: 4.5rem;
+    object-fit: contain;
+}
+
+.reg__prvn-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.reg__prvn-btn {
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    background: #F5F5F5;
+}
+
+.reg__prvn-btn img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+}
+
+.reg__prvn-input {
+    padding: 1.3rem 1rem;
 }
 
 .vrfc {
