@@ -601,14 +601,34 @@
     padding-bottom: 3.8rem;
 }
 
+.ply-ftr--gray {
+    background: #f5f5f5;
+}
+
 .ply-ftr .inner {
     max-width: 148rem;
 }
 
+.ply-ftr--gray .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
 .ply-ftr__tit {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     font-weight: 500;
     font-size: 18px;
     margin-bottom: 1rem;
+}
+
+.ply-ftr__tit img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
 }
 
 .ply-ftr__adr {
@@ -652,6 +672,64 @@
     font-weight: 500;
     font-size: 15px;
     color: #0C54B8;
+}
+
+.ply-ftr__flex {
+    display: flex;
+    align-items: center;
+}
+
+.ply-ftr__rmt {
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    position: relative;
+    color: #666;
+}
+
+.ply-ftr__rmt::before {
+    content: '';
+    width: 1px;
+    height: 11px;
+    background: #999;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.ply-ftr__rt {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ply-ftr__rt figure {
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.ply-ftr__rt figure img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+}
+
+.ply-ftr__rt dl dt {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.ply-ftr__rt dl dd {
+    font-weight: 600;
+    font-size: 1.8rem;
 }
 
 .ply-smr {
