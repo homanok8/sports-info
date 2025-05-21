@@ -484,3 +484,21 @@ $(document).ready(function() {
         $img.toggleClass('rotate-180');
     });
 });
+
+// 신청서작성 탭 
+$(function() {
+    $('.step__item').click(function() {
+        const currentItem = $(this).index();
+
+        $('.step__item').removeClass('active');
+        $(this).addClass('active');
+
+        $('.ply-bsc__item').hide();
+        $('.ply-bsc__item').eq(currentItem).show();
+
+        $('.pstn__list li').removeClass('active');
+        $('.pstn__list li').eq(currentItem).addClass('active');
+
+        $(window).scrollTop(0);
+    });
+});

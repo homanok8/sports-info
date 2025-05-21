@@ -1043,6 +1043,7 @@
     border-radius: 4rem;
     background: #fff;
     position: relative;
+    cursor: pointer;
 }
 
 .step__item.active {
@@ -1092,6 +1093,14 @@
     padding: 3rem 0;
     border-top: 1px solid #333;
     border-bottom: 1px solid #ddd;
+}
+
+.ply-bsc__item {
+    display: none;
+}
+
+.ply-bsc__item:first-child {
+    display: block;
 }
 
 .ply-bsc__table {
