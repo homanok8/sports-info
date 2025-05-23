@@ -811,6 +811,7 @@
     max-width: 122rem;
     height: 90vh;
     max-height: 74.7rem;
+    overflow: hidden;
 }
 
 .ply-pop--max1080 {
@@ -1032,6 +1033,11 @@
     width: 100%;
 }
 
+.ply-srh__table thead {
+    position: sticky;
+    top: 0;
+}
+
 .ply-srh__table th {
     padding: 1.45rem;
     text-align: center;
@@ -1216,6 +1222,7 @@
     font-weight: 500;
     font-size: 1.5rem;
     color: #333;
+    line-height: 1;
 }
 
 .ply-bsc__bm {
@@ -1241,6 +1248,11 @@
     font-size: 1.6rem;
     line-height: 1.2;
     color: #333;
+    transition: all 0.3s;
+}
+
+.ply__btn:hover {
+    opacity: 0.7;
 }
 
 .ply__btn--prev {
@@ -1620,6 +1632,16 @@
     color: #666;
     background: url(../../images/icons/select-icon.png) no-repeat calc(100% - 20px) 50% / 15px auto;
     background-color: #fff;
+}
+
+.ply-reg__card.max245 {
+    max-width: 24.5rem;
+}
+
+.ply-srh__scroll {
+    height: 57.8vh;
+    max-height: 54rem;
+    overflow-y: auto;
 }
 
 .ply-reg__card .selectbox:disabled + .custom-select-wrapper .custom-select-trigger {

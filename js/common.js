@@ -501,4 +501,22 @@ $(function() {
 
         $(window).scrollTop(0);
     });
+
+    $('.nextStepButton, .prevStepButton').click(function() {
+        const currentItem = $(this).parents('.ply-bsc__item').index();
+        const currentCnt = $(this).hasClass('nextStepButton') ? currentItem + 1 : currentItem - 1;
+
+        $('.step__item').removeClass('active');
+        $('.step__item').eq(currentCnt).addClass('active');
+
+        $('.ply-bsc__item').hide();
+        $('.ply-bsc__item').eq(currentCnt).show();
+
+        $('.pstn__list li').removeClass('active');
+        $('.pstn__list li').eq(currentCnt).addClass('active');
+
+        $(window).scrollTop(0);
+        
+    });
+
 });
