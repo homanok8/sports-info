@@ -1327,6 +1327,8 @@
     position: absolute;
     top: calc(100% + 3px);
     left: 0;
+    z-index: 9;
+    color: #333;
     overflow-y: auto;
 }
 
@@ -1704,12 +1706,20 @@
     border: 2px solid #0C54B8;
 }
 
+.reg__tit3 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 3rem;
+}
+
 .reg__table {
     width: 100%;
     border-top: 1px solid #333;
 }
 
 .reg__table th {
+    width: 16rem;
     vertical-align: middle;
     text-align: left;
     padding: 1rem 2.2rem;
@@ -1749,6 +1759,31 @@
 
 .reg__table td.pd0 {
     padding: 0;
+}
+
+.reg__table2 {
+    width: 100%;
+    border-top: 1px solid #333;
+}
+
+.reg__table2 th {
+    width: 16rem;
+    vertical-align: middle;
+    text-align: left;
+    padding: 1rem 2.2rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #ddd;
+}
+.reg__table2 th i {
+    color: #0C54B8;
+}
+
+.reg__table2 td {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    border-bottom: 1px solid #ddd;
 }
 
 .reg__team {
@@ -2032,6 +2067,10 @@
     min-width: 11.3rem;
 }
 
+.reg__save--min144 {
+    min-width: 14.4rem;
+}
+
 .reg__save--white {
     border: 1px solid #0C54B8;
     background: #fff;
@@ -2082,6 +2121,38 @@
     font-size: 1.3rem;
     color: #999;
     margin-bottom: 0.8rem;
+}
+
+.reg__year-srch.mb0 {
+    margin-bottom: 0;
+}
+
+.reg__year-srch .checkbox {
+    border: 0;
+    background: #ddd;
+}
+
+.reg__year-srch .checkbox:checked {
+    background: #0C54B8;
+}
+
+.reg__year-srch .checkbox::before {
+    border-color: #fff;
+    border-width: 2px;
+}
+
+.reg__year-srch .custom-select-trigger {
+    min-width: 14rem;
+    border: 1px solid #999;
+    background: url(../../images/icons/select-icon.png) no-repeat calc(100% - 15px) 50% / 15px auto;
+    padding-right: 3rem;
+}
+
+.reg__year-srch label {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #333;
+    padding-right: 0.5rem;
 }
 
 .reg__year {
@@ -2159,8 +2230,17 @@
     padding: 0 0.5rem;
 }
 
+.reg__item ul li dl dt.bold {
+    padding: 0 2.4rem;
+    font-weight: 600;
+}
+
 .reg__item ul li dl dd {
     padding: 0 0.5rem;
+}
+
+.reg__item ul li dl dd.bold {
+    padding: 0 2.4rem;
 }
 
 .reg__check {
@@ -2655,6 +2735,10 @@
     margin-top: 6rem;
 }
 
+.edu__desc--mt30 {
+    margin-top: 3rem;
+}
+
 .edu__desc li {
     display: flex;
     gap: 0.5rem;
@@ -3041,6 +3125,10 @@
     transition: all 0.3s;
 }
 
+.checkbox:focus {
+    outline: none;
+}
+
 .checkbox::before {
     content: '';
     display: block;
@@ -3310,4 +3398,108 @@
     font-weight: 400;
     font-size: 1.5rem;
     color: #666;
+}
+
+.brk__table {
+    width: 100%;
+    border-top: 1px solid #333;
+    margin-top: 2rem;
+}
+
+.brk__table th {
+    padding: 1.45rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #111;
+    text-align: center;
+    vertical-align: middle;
+    background: #F5F5F5;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+.brk__table th:first-child {
+    border-left: 0;
+}
+
+.brk__table td {
+    padding: 1.4rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #000;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+.brk__table td:first-child {
+    border-left: 0;
+}
+
+.brk__table td.text-left {
+    text-align: left;
+}
+
+.brk__link {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.brk__tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: #36B7E6;
+    border: 1px solid #36B7E6;
+    padding: 0.35rem 1rem;
+    border-radius: 2rem;
+    margin-left: 1rem;
+}
+
+.brk__btn {
+    height: 3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #000;
+    padding: 0.45rem 2rem;
+    border: 1px solid #333;
+    border-radius: 0.5rem;
+    background: #fff;
+    white-space: nowrap;
+}
+
+.brk__btn:disabled {
+    color: #666;
+    background: #F5F5F5;
+    border: 1px solid #ddd;
+}
+
+.brk__col {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+.brk__col .custom-select-trigger {
+    width: 100%;
+    max-width: 16rem;
+    min-width: 16rem;
+    height: 3rem;
+    border: 1px solid #999;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    padding-right: 3rem;
+    color: #000;
+    background: url(../../images/icons/select-icon.png) no-repeat calc(100% - 10px) 50% / 15px auto;
+}
+
+.brk__col .custom-option {
+    text-align: left;
 }

@@ -375,7 +375,7 @@
     line-height: 1.38 !important;
 }
 
-#tourDatepicker .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+#tourDatepicker .ui-datepicker .ui-datepicker-prev, #tourDatepicker .ui-datepicker .ui-datepicker-next {
     width: 2.4rem !important;
     height: 2.4rem !important;
     top: 50% !important;
@@ -427,7 +427,7 @@
     border: 1px solid #ddd !important;
 }
 
-#tourDatepicker .ui-datepicker td span, .ui-datepicker td a {
+#tourDatepicker .ui-datepicker td span, #tourDatepicker .ui-datepicker td a {
     display: block !important;
     width: 100% !important;
     height: 100% !important;
@@ -441,7 +441,7 @@
     background: rgba(12, 84, 184, 0.1) !important;
 }
 
-#tourDatepicker .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+#tourDatepicker .ui-state-default, #tourDatepicker .ui-widget-content .ui-state-default, #tourDatepicker .ui-widget-header .ui-state-default, #tourDatepicker .ui-button, html #tourDatepicker .ui-button.ui-state-disabled:hover, html #tourDatepicker .ui-button.ui-state-disabled:active {
     background: #F5F5F5 !important;
 }
 
@@ -451,7 +451,7 @@
     background: #fff !important;
 }
 
-#tourDatepicker .ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+#tourDatepicker .ui-state-disabled, #tourDatepicker .ui-widget-content .ui-state-disabled, #tourDatepicker .ui-widget-header .ui-state-disabled {
     opacity: 1 !important;
 }
 
@@ -475,7 +475,7 @@
     border: 2px solid #0C54B8 !important;
 }
 
-#tourDatepicker .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+#tourDatepicker .ui-state-active, #tourDatepicker .ui-widget-content .ui-state-active, #tourDatepicker .ui-widget-header .ui-state-active, #tourDatepicker a.ui-button:active, #tourDatepicker .ui-button:active, #tourDatepicker .ui-button.ui-state-active:hover {
     color: #333 !important;
 }
 
