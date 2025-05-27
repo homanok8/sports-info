@@ -411,50 +411,189 @@
                                 <span>예약마감</span>
                             </li>
                         </ul>
-                        <div id="tourDatepicker"></div>
-                        <script>
-                            $(function() {
-                                // 선택 가능 날짜 배열 (yyyy-mm-dd 형식)
-                                const availableDates = ["2025-05-13", "2025-05-14", "2025-05-15", "2025-05-16", "2025-05-19", "2025-05-20", "2025-05-21", "2025-05-22", "2025-05-23", "2025-05-26", "2025-05-27", "2025-05-28", "2025-05-29", "2025-05-30"];
-
-                                function enableSpecificDates(date) {
-                                    const d = $.datepicker.formatDate("yy-mm-dd", date);
-
-                                    if (availableDates.includes(d)) {
-                                        return [true, "available-date", "선택 가능"];
-                                    } else {
-                                        return [false, "", "선택 불가"];
-                                    }
-                                }
-
-                                $('#tourDatepicker').datepicker({
-                                    inline: true,
-                                    dateFormat: "yy-mm-dd",
-                                    dayNames: ["일", "월", "화", "수", "목", "금", "토"],
-                                    dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
-                                    monthNames: ["01월", "02월", "03월", "04월", "05월", "06월", "07월", "08월", "09월", "10월", "11월", "12월"],
-                                    monthNamesShort: ["01월", "02월", "03월", "04월", "05월", "06월", "07월", "08월", "09월", "10월", "11월", "12월"],
-                                    changeMonth: false,
-                                    changeYear: false,
-                                    showOtherMonths: true,
-                                    beforeShowDay: enableSpecificDates,
-                                    beforeShow: function(input, inst) {},
-                                    onChangeMonthYear: function(year, month, inst) {},
-                                    onSelect: function(dateText) {
-                                        console.log("선택된 날짜 : " + dateText);
-                                    }
-                                });
-
-                            });
-                        </script>
+                        <div id="tourDatepicker">
+                            <div class="tbl-cal_top center">
+                                <button type="button" class="prev">이전달</button>
+                                <div class="date">
+                                    <strong>2025년 05월</strong>
+                                </div>
+                                <button type="button" class="next">다음달</button>
+                            </div>
+                            <table class="tbl-cal">
+                                <caption>일~토요일로 구성된 날짜 선택 달력</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">일</th>
+                                        <th scope="col">월</th>
+                                        <th scope="col">화</th>
+                                        <th scope="col">수</th>
+                                        <th scope="col">목</th>
+                                        <th scope="col">금</th>
+                                        <th scope="col">토</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="month">27</td>
+                                        <td class="month">28</td>
+                                        <td class="month">29</td>
+                                        <td class="month">30</td>
+                                        <td class="disabled">
+                                            <span>1</span>
+                                        </td>
+                                        <td class="disabled">
+                                            <span>2</span>
+                                        </td>
+                                        <td class="disabled">
+                                            <span>3</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="disabled">
+                                            <span>4</span>
+                                        </td>
+                                        <td class="disabled">
+                                            <span>5</span>
+                                        </td>
+                                        <td class="disabled">
+                                            <span>6</span>
+                                        </td>
+                                        <td class="disabled">
+                                            <span>7</span>
+                                        </td>
+                                        <td class="disabled">
+                                            <span>8</span>
+                                        </td>
+                                        <td class="disabled">
+                                            <span>9</span>
+                                        </td>
+                                        <td class="disabled">
+                                            <span>10</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="disabled">
+                                            <span>11</span>
+                                        </td>
+                                        <td class="disabled">
+                                            <span>12</span>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <span>13</span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <span>14</span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <span>15</span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <span>16</span>
+                                            </a>
+                                        </td>
+                                        <td class="disabled">
+                                            <span>17</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="disabled">
+                                            <span>18</span>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <span>19</span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <span>20</span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <span>21</span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="active">
+                                                <span>22</span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <span>23</span>
+                                            </a>
+                                        </td>
+                                        <td class="disabled">
+                                            <span>24</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="disabled">
+                                            <span>25</span>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <span>26</span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <span>27</span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <span>28</span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <span>29</span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <span>30</span>
+                                            </a>
+                                        </td>
+                                        <td class="disabled">
+                                            <span>31</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                         <p class="tour__red">*예약현황은 수시로 변경될 수 있어 예약현황과 다를 수 있습니다.</p>
                         <p class="tour__red">*개인은 문화가 있는 날에만 가능합니다.</p>
                     </div>
                     <div class="tour__rt">
-                        <ul class="tour__day-list">
+                        <!-- <ul class="tour__day-list">
                             <li>날짜 : 2025년 5월 22일</li>
                             <li>시간 : 10:00</li>
-                        </ul>
+                        </ul> -->
+                        <div class="res-select-date">
+                            <div class="top">
+                                날짜 / 시간 선택
+                            </div>
+
+                            <div class="cont">
+                                <strong class="date">2025년 05월 22일 (목)</strong>
+                                <div class="select">
+                                    <button type="button" class="active">10:00</button>
+                                    <button type="button">10:00</button>
+                                    <button type="button">10:00</button>
+                                    <button type="button">10:00</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 

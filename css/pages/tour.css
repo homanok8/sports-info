@@ -359,146 +359,154 @@
     margin-bottom: 1rem;
 }
 
-#tourDatepicker .ui-widget.ui-widget-content {
-    width: 100%;
-    box-shadow: unset;
+.tbl-cal_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
     margin-top: 2rem;
-    padding-bottom: 0 !important;
-    border-radius: 0 !important;
-    border: 0 !important;
 }
 
-#tourDatepicker .ui-datepicker .ui-datepicker-title {
-    padding: 1rem !important;
-    font-weight: 600 !important;
-    font-size: 2.4rem !important;
-    line-height: 1.38 !important;
-}
-
-#tourDatepicker .ui-datepicker .ui-datepicker-prev, #tourDatepicker .ui-datepicker .ui-datepicker-next {
-    width: 2.4rem !important;
-    height: 2.4rem !important;
-    top: 50% !important;
-    transform: translateY(-50%);
-}
-
-#tourDatepicker .ui-datepicker .ui-datepicker-prev {
-    left: 0 !important;
-}
-
-#tourDatepicker .ui-datepicker .ui-datepicker-next {
-    right: 0 !important;
-}
-
-#tourDatepicker .ui-icon {
+.tbl-cal_top button {
     width: 2.4rem;
     height: 2.4rem;
+    border: 0;
+    background: url(../../images/icons/arrow-icon.png) no-repeat center / contain;
+    background-color: transparent;
+    text-indent: -9999999px;
 }
 
-#tourDatepicker .ui-widget-header .ui-icon {
-    background: url(../../images/icons/arrow-icon.png) no-repeat center / contain !important;
+.tbl-cal_top button.prev {
+    transform: rotate(180deg);
 }
 
-#tourDatepicker .ui-datepicker .ui-datepicker-header {
+.tbl-cal_top .date {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 1.38;
+}
+
+.tbl-cal {
+    width: 100%;
+}
+
+.tbl-cal th {
+    padding: 1.4rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tbl-cal th:first-child {
+    color: #FF0000;
+}
+
+.tbl-cal th:last-child {
+    color: #0C54B8;
+}
+
+.tbl-cal tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.tbl-cal td {
+    width: 9.2rem;
+    height: 7rem;
+    border: 1px solid #ddd;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #999;
+}
+
+.tbl-cal td.month {
+    padding: 1rem;
+}
+
+.tbl-cal td.disabled {
+    pointer-events: none;
+}
+
+.tbl-cal td a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.tbl-cal td span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #333;
+    background: #F5F5F5;
+}
+
+.tbl-cal td a span {
+    background: rgba(12, 84, 184, 0.1);
+}
+
+.tbl-cal td a.active::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #0C54B8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.res-select-date .top {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #333;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
     margin-bottom: 1rem;
 }
 
-#tourDatepicker .ui-datepicker th {
-    padding: 1.4rem 4rem !important;
-    font-weight: 500 !important;
-    font-size: 1.5rem !important;
-    line-height: 1.38 !important;
-    color: #333 !important;
+.res-select-date .cont .date {
+    display: block;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 1rem;
 }
 
-#tourDatepicker .ui-datepicker th:first-child {
-    color: #FF0000 !important;
+.res-select-date .cont .select {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 }
 
-#tourDatepicker .ui-datepicker th:last-child {
-    color: #0C54B8 !important;
+.res-select-date .cont .select button {
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    background: #fff;
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: #666;
+    transition: all 0.3s;
 }
 
-#tourDatepicker .ui-datepicker td {
-    height: 7rem;
-    padding: 0 !important;
-    text-align: left !important;
-    vertical-align: top !important;
-    border: 1px solid #ddd !important;
+.res-select-date .cont .select button:hover {
+    border-color: #999;
 }
 
-#tourDatepicker .ui-datepicker td span, #tourDatepicker .ui-datepicker td a {
-    display: block !important;
-    width: 100% !important;
-    height: 100% !important;
-    font-weight: 600 !important;
-    font-size: 1.5rem !important;
-    line-height: 1.38 !important;
-    color: #333 !important;
-    padding: 1rem !important;
-    border-radius: 0 !important;
-    text-align: left !important;
-    background: rgba(12, 84, 184, 0.1) !important;
-}
-
-#tourDatepicker .ui-state-default, #tourDatepicker .ui-widget-content .ui-state-default, #tourDatepicker .ui-widget-header .ui-state-default, #tourDatepicker .ui-button, html #tourDatepicker .ui-button.ui-state-disabled:hover, html #tourDatepicker .ui-button.ui-state-disabled:active {
-    background: #F5F5F5 !important;
-}
-
-#tourDatepicker .ui-datepicker td span {
-    font-weight: 300 !important;
-    color: #999 !important;
-    background: #fff !important;
-}
-
-#tourDatepicker .ui-state-disabled, #tourDatepicker .ui-widget-content .ui-state-disabled, #tourDatepicker .ui-widget-header .ui-state-disabled {
-    opacity: 1 !important;
-}
-
-#tourDatepicker .ui-datepicker td.ui-datepicker-unselectable span {
-    background: #F5F5F5 !important;
-    font-weight: 600 !important;
-    color: #333 !important;
-}
-
-#tourDatepicker .ui-datepicker td.ui-datepicker-unselectable.ui-datepicker-other-month span {
-    background: #fff !important;
-    font-weight: 300 !important;
-    color: #999 !important;
-}
-
-#tourDatepicker .ui-datepicker td.available-date a {
-    background: rgba(12, 84, 184, 0.1) !important;
-}
-
-#tourDatepicker .ui-datepicker td.available-date a.ui-state-active {
-    border: 2px solid #0C54B8 !important;
-}
-
-#tourDatepicker .ui-state-active, #tourDatepicker .ui-widget-content .ui-state-active, #tourDatepicker .ui-widget-header .ui-state-active, #tourDatepicker a.ui-button:active, #tourDatepicker .ui-button:active, #tourDatepicker .ui-button.ui-state-active:hover {
-    color: #333 !important;
-}
-
-#tourDatepicker .ui-datepicker-year::after {
-    content: '년';
-}
-
-#tourDatepicker .ui-datepicker td:first-child a {
-    color: #FF0000 !important;
-}
-
-#tourDatepicker .ui-datepicker td:first-child span {
-    color: #FF0000 !important;
-    font-weight: 600 !important;
-}
-
-#tourDatepicker .ui-datepicker td:last-child a {
-    color: #0C54B8 !important;
-}
-
-#tourDatepicker .ui-datepicker td:last-child span {
-    color: #0C54B8 !important;
-    font-weight: 600 !important;
+.res-select-date .cont .select button.active {
+    background: #f5f5f5;
+    border-color: #999;
 }
 
 .tour__red {
@@ -1386,6 +1394,10 @@
     max-width: 13.8rem;
 }
 
+.hpy-reg__select--max-300 {
+    max-width: 30rem;
+}
+
 .hpy-reg__select .custom-select-trigger {
     width: 100%;
     min-width: unset;
@@ -1473,6 +1485,10 @@
     background: #fff;
 }
 
+.hpy-reg__btn--min120 {
+    min-width: 12rem;
+}
+
 .hpy-reg__fileselect {
     padding-left: 0.3rem;
     font-weight: 400;
@@ -1524,6 +1540,25 @@
 
 .hpy-reg__file-list {
     margin-top: 6px;
+}
+
+.hpy-reg__file-list select {
+    width: 100%;
+    height: 9rem;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 0.5rem;
+    appearance: none;
+    margin-bottom: 0.6rem;
+    overflow-y: auto;
+}
+
+.hpy-reg__file-list select option {
+    display: block;
+    padding: 0.6rem 1rem;
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: #666;
 }
 
 .hpy-reg__file-head {

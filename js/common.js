@@ -520,3 +520,40 @@ $(function() {
     });
 
 });
+
+// breadcrumbs toggle
+$(function() {
+    $(document).click(function(e) {
+        // 클릭한 요소가 brdc__link나 brdc__sub 내부가 아니라면
+        if (!$(e.target).closest('.brdc__item').length) {
+            $('.brdc__link').removeClass('active');
+            $('.brdc__sub').slideUp();
+        }
+    });
+
+    $('.brdc__link').click(function(e) {
+        var $this = $(this);
+        var $submenu = $this.next('.brdc__sub');
+
+        if ($submenu.length > 0) {
+            e.preventDefault(); // 링크 이동 방지
+
+            if ($this.hasClass('active')) {
+                $this.removeClass('active');
+                $submenu.slideUp();
+            } else {
+                $('.brdc__link').removeClass('active');
+                $('.brdc__sub').slideUp();
+                $this.addClass('active');
+                $submenu.slideDown();
+            }
+        }
+        // brdc__sub 없으면 기본 링크 이동
+        e.stopPropagation(); // 문서 클릭 이벤트 전파 방지
+    });
+
+    // 클릭 방지 (하위 메뉴 클릭 시에도 문서 클릭 이벤트 방지)
+    $('.brdc__sub').click(function(e) {
+        e.stopPropagation();
+    });
+});

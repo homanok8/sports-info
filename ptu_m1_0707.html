@@ -408,6 +408,19 @@
                                 </td>
                             </tr>
                             <tr>
+                                <th><i>*</i>신청단체 구분</th>
+                                <td>
+                                    <div class="hpy-reg__select hpy-reg__select--max-300">
+                                        <select name="" id="" class="selectbox">
+                                            <option value="">선택</option>
+                                            <option value="">선택</option>
+                                            <option value="">선택</option>
+                                            <option value="">선택</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
                                 <th><i>*</i>시설주소</th>
                                 <td>
                                     <div class="hpy-reg__flex">
@@ -487,20 +500,9 @@
                                         <input type="file" id="atchFile" class="hpy-reg__fileinput">
                                     </div>
                                     <div class="hpy-reg__file-list">
-                                        <div class="hpy-reg__file-head">
-                                            <button type="button" class="hpy-reg__file-delete"></button>
-                                            <span class="hpy-reg__filename">파일명</span>
-                                        </div>
-                                        <ul>
-                                            <li>
-                                                <button type="button" class="hpy-reg__file-delete"></button>
-                                                <span class="hpy-reg__filename">선택된 파일.pdf</span>
-                                            </li>
-                                            <li>
-                                                <button type="button" class="hpy-reg__file-delete"></button>
-                                                <span class="hpy-reg__filename">선택된 파일.pdf</span>
-                                            </li>
-                                        </ul>
+                                        <select name="files_list" id="files_list" size="5">
+                                        </select>
+                                        <button type="button" class="hpy-reg__btn hpy-reg__btn--file hpy-reg__btn--min120">선택파일 삭제</button>
                                     </div>
                                 </td>
                             </tr>
