@@ -1238,6 +1238,14 @@
     padding-right: 2rem;
 }
 
+.ply-bsc__bm--mt0 {
+    margin-top: 0;
+}
+
+.ply-bsc__bm--col {
+    flex-direction: column;
+}
+
 .ply__btn {
     height: 4.2rem;
     border: 1px solid #333;
@@ -2483,9 +2491,16 @@
 
 .mmb__lsit {
     min-height: 19rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border: 1px solid #ddd;
     border-radius: 3rem;
     padding: 1.8rem 3rem;
+}
+
+.mmb__lsit + .mmb__lsit {
+    margin-top: 2rem;
 }
 
 .mmb__item {
