@@ -1225,6 +1225,24 @@
     line-height: 1;
 }
 
+.ply-bsc__ttn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    border: 1px solid #999;
+    border-radius: 1rem;
+    padding: 0.7rem 2rem;
+    background: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: #333;
+    transition: all 0.3s;
+    margin-left: 1rem;
+    white-space: nowrap;
+}
+
 .ply-bsc__bm {
     display: flex;
     align-items: center;
