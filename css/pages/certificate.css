@@ -1875,6 +1875,19 @@
     font-weight: 400;
 }
 
+.reg__block .custom-select-trigger {
+    width: 100%;
+    min-width: unset;
+    height: 4rem;
+    border: 1px solid #ddd;
+    border-radius: 0.3rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #666;
+    background: url(../../images/icons/select-icon.png) no-repeat calc(100% - 20px) 50% / 15px auto;
+    background-color: #fff;
+}
+
 .reg__textarea {
     width: 100%;
     height: 26rem;
