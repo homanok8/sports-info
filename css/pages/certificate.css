@@ -5,6 +5,10 @@
     margin-bottom: 15rem;
 }
 
+.certificate--pt110 {
+    padding-top: 11rem;
+}
+
 .certificate__top {
     position: relative;
 }
@@ -3535,4 +3539,137 @@
 
 .brk__col .custom-option {
     text-align: left;
+}
+
+.dwn {
+    padding-top: 1.6rem;
+}
+
+.dwn__tit {
+    padding: 1rem 0;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.dwn__block {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    background: #F5F5F5;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    padding: 2.3rem 3rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
+.dwn__block img {
+    width: 6rem;
+}
+
+.dwn__block p b {
+    font-weight: 600;
+    color: #111;
+}
+
+.dwn__list {
+    display: flex;
+    gap: 2rem;
+}
+
+.dwn__item {
+    width: 100%;
+    max-width: 34rem;
+}
+
+.dwn__link {
+    width: 100%;
+    height: 14.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #333;
+    background: #F3FCFF;
+    border: 1px solid #0C54B8;
+    border-radius: 1rem;
+}
+
+.dwn__link span {
+    padding: 0.3rem 1rem;
+    text-align: center;
+}
+
+.dwn__link img {
+    width: 3rem;
+    margin-top: 0.3rem;
+}
+
+.dwn__span {
+    display: block;
+    width: 100%;
+    margin-top: 1.6rem;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #333;
+    text-align: center;
+}
+
+.dwn__bm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 1.6rem;
+}
+
+.dwn__desc {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.dwn__desc li {
+    padding: 0.3rem 1rem;
+}
+
+.dwn__nt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: #F5F5F5;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    white-space: nowrap;
+}
+
+.dwn__nt span {
+    display: block;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #333;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+.dwn__ddl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 2rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #fff;
+    background: #666666;
+    border-radius: 0.5rem;
+    border: 0;
+    white-space: nowrap;
 }
