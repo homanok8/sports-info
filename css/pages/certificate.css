@@ -1888,6 +1888,10 @@
     background-color: #fff;
 }
 
+.reg__block .custom-options {
+    border-radius: 0.3rem;
+}
+
 .reg__textarea {
     width: 100%;
     height: 26rem;
