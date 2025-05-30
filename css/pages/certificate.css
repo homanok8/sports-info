@@ -464,6 +464,24 @@
     background: #fff;
 }
 
+.chc__blc {
+    width: 4.4rem;
+    height: 4.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+
+.chc__blc img {
+    width: 3rem;
+}
+
 .chc__item:nth-child(n+5) {
     border-top: 1px solid #ddd;
 }
